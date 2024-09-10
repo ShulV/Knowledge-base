@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "it/good-pratices/check-list-for-new-project.md",
+                "file": "description/tags.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "it/good-pratices/check-list-for-new-project.md",
+                "file": "description/tags.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "it/good-pratices/check-list-for-new-project.md",
+                "file": "description/tags.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "it/good-pratices/check-list-for-new-project.md"
+                "file": "description/tags.md"
               }
             }
           },
@@ -159,9 +159,9 @@
   },
   "active": "69092c2c796250da",
   "lastOpenFiles": [
+    "it/good-pratices/check-list-for-new-project.md",
     "it/good-pratices/code-style.md",
     "description/tags.md",
-    "it/good-pratices/check-list-for-new-project.md",
     "description",
     "it/vcs/git/commands.md",
     "it/testing/spock-framework/spock-in-action.md",
