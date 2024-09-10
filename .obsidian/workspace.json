@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "it/vcs/git/commands.md",
+                "file": "self-development/time-management/advices.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "it/vcs/git/commands.md",
+                "file": "self-development/time-management/advices.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "it/vcs/git/commands.md",
+                "file": "self-development/time-management/advices.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "it/vcs/git/commands.md"
+                "file": "self-development/time-management/advices.md"
               }
             }
           },
@@ -159,8 +159,10 @@
   },
   "active": "69092c2c796250da",
   "lastOpenFiles": [
-    "it/testing/spock-framework/official-doc.md",
+    "self-development/soft-skills/advices.md",
+    "self-development/time-management/advices.md",
     "it/vcs/git/commands.md",
+    "it/testing/spock-framework/official-doc.md",
     "README.md",
     "it/clean-code/advices-and-recommendations.md",
     "self-development/soft-skills",
@@ -192,7 +194,6 @@
     "spring.md",
     "srping.md",
     "[.md",
-    "it/java/builder",
-    "programming/testing/spock-framework/spock-in-action.md"
+    "it/java/builder"
   ]
 }
