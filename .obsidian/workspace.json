@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "it/vcs/git/commands.md",
+                "file": "it/good-pratices/check-list-for-new-project.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "it/vcs/git/commands.md",
+                "file": "it/good-pratices/check-list-for-new-project.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "it/vcs/git/commands.md",
+                "file": "it/good-pratices/check-list-for-new-project.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "it/vcs/git/commands.md"
+                "file": "it/good-pratices/check-list-for-new-project.md"
               }
             }
           },
@@ -159,28 +159,30 @@
   },
   "active": "69092c2c796250da",
   "lastOpenFiles": [
+    "it/good-pratices/code-style.md",
+    "description/tags.md",
+    "it/good-pratices/check-list-for-new-project.md",
+    "description",
+    "it/vcs/git/commands.md",
     "it/testing/spock-framework/spock-in-action.md",
     "it/testing/spock-framework/official-doc.md",
     "it/java/spring/spring-boot.md",
     "it/os/linux/commands/file system.md",
     "it/java/builder/gradle.md",
-    "it/clean-code/check-list.md",
-    "it/clean-code/code-style.md",
     "self-development/time-management/advices.md",
     "self-development/soft-skills/advices.md",
-    "it/vcs/git/commands.md",
     "it/vcs/git/cases.md",
     "it/os/linux/commands/processes-and-monitoring.md",
     "it/os/linux/commands/packages.md",
     "it/os/linux/commands/network.md",
     "it/ide/intellij-idea/plugins.md",
-    "it/clean-code/advices-and-recommendations.md",
+    "it/good-pratices/advices-and-recommendations.md",
     "it/ide/intellij-idea/hotkeys.md",
     "README.md",
     "self-development/soft-skills",
     "self-development/time-management",
     "self-development",
-    "it/clean-code",
+    "it/good-pratices",
     "it/vcs/git",
     "it/ide/intellij-idea",
     "it/ide",
@@ -192,8 +194,6 @@
     "it/java/spring/spring-boot^java-compatibility-1.md",
     "spring-boot^.md",
     "spring.md",
-    "srping.md",
-    "[.md",
-    "it/java/builder"
+    "srping.md"
   ]
 }
