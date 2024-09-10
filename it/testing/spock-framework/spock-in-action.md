@@ -1,3 +1,5 @@
+
+---
 ## Chapter 1
 ### Common ways to handle enterprise complexity
 
@@ -13,7 +15,7 @@ As you can see in this listing,
 the meaning of def is “I won’t declare a type here; please do it automatically for me.”
 \
 
-#### Expando() 
+### Expando() 
 
 Что-то похожее на моки, только быстрее для частных случаев
 `

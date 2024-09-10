@@ -1,5 +1,6 @@
 
-### Подпись не только у самого метода, но и у логических блоков
+---
+## Подпись не только у самого метода, но и у логических блоков
 ```groovy
 given: "open a database connection" // code goes here 
 and: "seed the customer table" // code goes here 
@@ -9,9 +10,9 @@ and: "seed the product table" // code goes here
 > **and** помогает описывать разные части одного блока
 
 
-### Вынесение логики в отдельный метод:
+## Вынесение логики в отдельный метод:
 
-#### helper method
+### helper method
 ```groovy
 def "offered PC matches preferred configuration"() { 
 	when: 
@@ -30,7 +31,7 @@ def matchesPreferredConfiguration(pc) {
 ```
 
 
-####  assert выражение
+###  assert выражение
 Можно красивее:
 ```groovy
 void matchesPreferredConfiguration(pc) { 
@@ -41,7 +42,7 @@ void matchesPreferredConfiguration(pc) {
 }
 ```
 
-#### verifyAll()
+### verifyAll()
 А можно заюзать конструкцию:
 ```groovy
 def "offered PC matches preferred configuration"() { 
