@@ -4,7 +4,6 @@
 
 ---
 ## Gradle/java compatibility
-
 #compatibility #совместимость #matrix #version #java #gradle
 
 | Java version | Support for toolchains | Support for running Gradle |

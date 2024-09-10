@@ -1,7 +1,6 @@
 
 ---
 ## Java Compatibility
-
 #compatibility #совместимость #matrix #version #java #spring-boot
 
 | Spring boot release | Java    |
