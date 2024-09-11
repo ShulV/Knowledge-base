@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "description/tags.md",
+                "file": "it/good-pratices/check-list-for-new-project.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#version",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -69,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "right": {
     "id": "a91e6810cc2b7c5e",
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "description/tags.md",
+                "file": "it/good-pratices/check-list-for-new-project.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "description/tags.md",
+                "file": "it/good-pratices/check-list-for-new-project.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "description/tags.md"
+                "file": "it/good-pratices/check-list-for-new-project.md"
               }
             }
           },
@@ -159,9 +159,14 @@
   },
   "active": "69092c2c796250da",
   "lastOpenFiles": [
+    "it/terms-and-concepts.md",
+    "it/security/certificates-and-https/ssl-tls.md",
+    "it/good-pratices/advices-and-recommendations.md",
     "it/good-pratices/check-list-for-new-project.md",
-    "it/good-pratices/code-style.md",
     "description/tags.md",
+    "it/security/certificates-and-https",
+    "it/security",
+    "it/good-pratices/code-style.md",
     "description",
     "it/vcs/git/commands.md",
     "it/testing/spock-framework/spock-in-action.md",
@@ -176,7 +181,6 @@
     "it/os/linux/commands/packages.md",
     "it/os/linux/commands/network.md",
     "it/ide/intellij-idea/plugins.md",
-    "it/good-pratices/advices-and-recommendations.md",
     "it/ide/intellij-idea/hotkeys.md",
     "README.md",
     "self-development/soft-skills",
@@ -187,13 +191,9 @@
     "it/ide/intellij-idea",
     "it/ide",
     "it/vcs.md",
-    "it/vcs",
     "it/os/linux/terminal-commands-and-instructions.md",
-    "it/os/linux/commands",
     "it/java/spring/spring-boot.md^java-compatibility-1.md",
     "it/java/spring/spring-boot^java-compatibility-1.md",
-    "spring-boot^.md",
-    "spring.md",
-    "srping.md"
+    "spring-boot^.md"
   ]
 }
