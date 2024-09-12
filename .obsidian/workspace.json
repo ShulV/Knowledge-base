@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "it/good-pratices/check-list-for-new-project.md",
+                "file": "it/os/linux/commands/file system.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "it/good-pratices/check-list-for-new-project.md",
+                "file": "it/os/linux/commands/file system.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "it/good-pratices/check-list-for-new-project.md",
+                "file": "it/os/linux/commands/file system.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "it/good-pratices/check-list-for-new-project.md"
+                "file": "it/os/linux/commands/file system.md"
               }
             }
           },
@@ -159,10 +159,15 @@
   },
   "active": "69092c2c796250da",
   "lastOpenFiles": [
+    "it/os/linux/commands/network.md",
+    "it/os/linux/commands/file system.md",
+    "it/java/spring/spring-mvc.md",
+    "it/java/spring/spring-boot.md",
+    "it/vcs/git/cases.md",
+    "it/good-pratices/check-list-for-new-project.md",
     "it/terms-and-concepts.md",
     "it/security/certificates-and-https/ssl-tls.md",
     "it/good-pratices/advices-and-recommendations.md",
-    "it/good-pratices/check-list-for-new-project.md",
     "description/tags.md",
     "it/security/certificates-and-https",
     "it/security",
@@ -171,15 +176,11 @@
     "it/vcs/git/commands.md",
     "it/testing/spock-framework/spock-in-action.md",
     "it/testing/spock-framework/official-doc.md",
-    "it/java/spring/spring-boot.md",
-    "it/os/linux/commands/file system.md",
     "it/java/builder/gradle.md",
     "self-development/time-management/advices.md",
     "self-development/soft-skills/advices.md",
-    "it/vcs/git/cases.md",
     "it/os/linux/commands/processes-and-monitoring.md",
     "it/os/linux/commands/packages.md",
-    "it/os/linux/commands/network.md",
     "it/ide/intellij-idea/plugins.md",
     "it/ide/intellij-idea/hotkeys.md",
     "README.md",
@@ -193,7 +194,6 @@
     "it/vcs.md",
     "it/os/linux/terminal-commands-and-instructions.md",
     "it/java/spring/spring-boot.md^java-compatibility-1.md",
-    "it/java/spring/spring-boot^java-compatibility-1.md",
-    "spring-boot^.md"
+    "it/java/spring/spring-boot^java-compatibility-1.md"
   ]
 }
