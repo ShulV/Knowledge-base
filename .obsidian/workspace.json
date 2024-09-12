@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "it/os/linux/commands/file system.md",
+                "file": "it/good-pratices/check-list-for-new-project.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "it/os/linux/commands/file system.md",
+                "file": "it/good-pratices/check-list-for-new-project.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "it/os/linux/commands/file system.md",
+                "file": "it/good-pratices/check-list-for-new-project.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "it/os/linux/commands/file system.md"
+                "file": "it/good-pratices/check-list-for-new-project.md"
               }
             }
           },
@@ -159,27 +159,33 @@
   },
   "active": "69092c2c796250da",
   "lastOpenFiles": [
+    "it/database/postgresql/psql.md",
+    "it/regexp.md",
+    "it/database/postgresql",
+    "it/database",
     "it/os/linux/commands/network.md",
+    "it/os/linux/commands/processes-and-monitoring.md",
     "it/os/linux/commands/file system.md",
+    "it/vcs/git/commands.md",
+    "it/good-pratices/code-style.md",
+    "it/good-pratices/check-list-for-new-project.md",
+    "description/common.md",
+    "it/os/linux/commands/systemctl.md",
     "it/java/spring/spring-mvc.md",
     "it/java/spring/spring-boot.md",
     "it/vcs/git/cases.md",
-    "it/good-pratices/check-list-for-new-project.md",
     "it/terms-and-concepts.md",
     "it/security/certificates-and-https/ssl-tls.md",
     "it/good-pratices/advices-and-recommendations.md",
     "description/tags.md",
     "it/security/certificates-and-https",
     "it/security",
-    "it/good-pratices/code-style.md",
     "description",
-    "it/vcs/git/commands.md",
     "it/testing/spock-framework/spock-in-action.md",
     "it/testing/spock-framework/official-doc.md",
     "it/java/builder/gradle.md",
     "self-development/time-management/advices.md",
     "self-development/soft-skills/advices.md",
-    "it/os/linux/commands/processes-and-monitoring.md",
     "it/os/linux/commands/packages.md",
     "it/ide/intellij-idea/plugins.md",
     "it/ide/intellij-idea/hotkeys.md",
@@ -188,12 +194,6 @@
     "self-development/time-management",
     "self-development",
     "it/good-pratices",
-    "it/vcs/git",
-    "it/ide/intellij-idea",
-    "it/ide",
-    "it/vcs.md",
-    "it/os/linux/terminal-commands-and-instructions.md",
-    "it/java/spring/spring-boot.md^java-compatibility-1.md",
-    "it/java/spring/spring-boot^java-compatibility-1.md"
+    "it/vcs/git"
   ]
 }
