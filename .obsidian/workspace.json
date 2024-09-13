@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "it/vcs/git/cases.md",
+                "file": "it/good-pratices/advices-and-recommendations.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#version",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -69,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "right": {
     "id": "a91e6810cc2b7c5e",
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "it/vcs/git/cases.md",
+                "file": "it/good-pratices/advices-and-recommendations.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "it/vcs/git/cases.md",
+                "file": "it/good-pratices/advices-and-recommendations.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "it/vcs/git/cases.md"
+                "file": "it/good-pratices/advices-and-recommendations.md"
               }
             }
           },
@@ -159,37 +159,37 @@
   },
   "active": "69092c2c796250da",
   "lastOpenFiles": [
-    "it/vcs/git/commands.md",
+    "it/good-pratices/check-list-for-new-project.md",
     "it/good-pratices/heuristic-rules-and-quotes.md",
-    "it/terms-and-concepts.md",
-    "description/tags.md",
-    "it/security/certificates-and-https/ssl-tls.md",
-    "it/security/certificates-and-https",
-    "it/security",
-    "it/regexp.md",
-    "it/os/linux/commands/systemctl.md",
-    "it/java/spring/spring-mvc.md",
     "it/database/postgresql/psql.md",
+    "it/regexp.md",
     "it/database/postgresql",
     "it/database",
-    "description/common.md",
-    "it/good-pratices/check-list-for-new-project.md",
+    "it/os/linux/commands/network.md",
+    "it/os/linux/commands/processes-and-monitoring.md",
+    "it/os/linux/commands/file system.md",
+    "it/vcs/git/commands.md",
     "it/good-pratices/code-style.md",
+    "description/common.md",
+    "it/os/linux/commands/systemctl.md",
+    "it/java/spring/spring-mvc.md",
     "it/java/spring/spring-boot.md",
-    "it/java/builder/gradle.md",
-    "it/ide/intellij-idea/hotkeys.md",
+    "it/vcs/git/cases.md",
+    "it/terms-and-concepts.md",
+    "it/security/certificates-and-https/ssl-tls.md",
+    "it/good-pratices/advices-and-recommendations.md",
+    "description/tags.md",
+    "it/security/certificates-and-https",
+    "it/security",
     "description",
     "it/testing/spock-framework/spock-in-action.md",
     "it/testing/spock-framework/official-doc.md",
-    "it/os/linux/commands/file system.md",
+    "it/java/builder/gradle.md",
     "self-development/time-management/advices.md",
     "self-development/soft-skills/advices.md",
-    "it/vcs/git/cases.md",
-    "it/os/linux/commands/processes-and-monitoring.md",
     "it/os/linux/commands/packages.md",
-    "it/os/linux/commands/network.md",
     "it/ide/intellij-idea/plugins.md",
-    "it/good-pratices/advices-and-recommendations.md",
+    "it/ide/intellij-idea/hotkeys.md",
     "self-development/soft-skills",
     "self-development/time-management",
     "self-development",
