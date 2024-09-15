@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "it/good-pratices/advices-and-recommendations.md",
+                "file": "it/good-pratices/heuristic-rules-and-quotes.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#version",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -69,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 300
   },
   "right": {
     "id": "a91e6810cc2b7c5e",
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "it/good-pratices/advices-and-recommendations.md",
+                "file": "it/good-pratices/heuristic-rules-and-quotes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "it/good-pratices/advices-and-recommendations.md",
+                "file": "it/good-pratices/heuristic-rules-and-quotes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "it/good-pratices/advices-and-recommendations.md"
+                "file": "it/good-pratices/heuristic-rules-and-quotes.md"
               }
             }
           },
@@ -160,40 +160,40 @@
   "active": "69092c2c796250da",
   "lastOpenFiles": [
     "it/good-pratices/check-list-for-new-project.md",
-    "it/good-pratices/heuristic-rules-and-quotes.md",
-    "it/database/postgresql/psql.md",
-    "it/regexp.md",
-    "it/database/postgresql",
-    "it/database",
-    "it/os/linux/commands/network.md",
-    "it/os/linux/commands/processes-and-monitoring.md",
-    "it/os/linux/commands/file system.md",
-    "it/vcs/git/commands.md",
     "it/good-pratices/code-style.md",
-    "description/common.md",
-    "it/os/linux/commands/systemctl.md",
-    "it/java/spring/spring-mvc.md",
-    "it/java/spring/spring-boot.md",
+    "it/good-pratices/heuristic-rules-and-quotes.md",
+    "it/books.md",
+    "self-development/soft-skills/advices.md",
     "it/vcs/git/cases.md",
+    "it/Untitled",
+    "it/vcs/git/commands.md",
     "it/terms-and-concepts.md",
-    "it/security/certificates-and-https/ssl-tls.md",
-    "it/good-pratices/advices-and-recommendations.md",
     "description/tags.md",
+    "it/security/certificates-and-https/ssl-tls.md",
     "it/security/certificates-and-https",
     "it/security",
+    "it/regexp.md",
+    "it/os/linux/commands/systemctl.md",
+    "it/java/spring/spring-mvc.md",
+    "it/database/postgresql/psql.md",
+    "it/database/postgresql",
+    "it/database",
+    "description/common.md",
+    "it/java/spring/spring-boot.md",
+    "it/java/builder/gradle.md",
+    "it/ide/intellij-idea/hotkeys.md",
     "description",
     "it/testing/spock-framework/spock-in-action.md",
     "it/testing/spock-framework/official-doc.md",
-    "it/java/builder/gradle.md",
-    "self-development/time-management/advices.md",
-    "self-development/soft-skills/advices.md",
+    "it/os/linux/commands/file system.md",
+    "it/time-management/advices.md",
+    "it/os/linux/commands/processes-and-monitoring.md",
     "it/os/linux/commands/packages.md",
+    "it/os/linux/commands/network.md",
     "it/ide/intellij-idea/plugins.md",
-    "it/ide/intellij-idea/hotkeys.md",
     "self-development/soft-skills",
-    "self-development/time-management",
+    "it/time-management",
     "self-development",
-    "it/good-pratices",
-    "it/vcs/git"
+    "it/good-pratices"
   ]
 }
