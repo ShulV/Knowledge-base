@@ -1,6 +1,6 @@
 
 ---
-## Запрос через curl с использование сертификата
+## Запрос через curl с использованием сертификата
 #curl #p12 #insecure #cert #certificate #сертификат
 ```bash
 curl --insecure --cert-type P12 --cert /path-to/your-file.p12:the-password https://your-host.com/endpoint
