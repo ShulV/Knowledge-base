@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "it/good-pratices/check-list-for-new-project.md",
+                "file": "it/optimization/DB.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "it/good-pratices/check-list-for-new-project.md",
+                "file": "it/optimization/DB.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "it/good-pratices/check-list-for-new-project.md",
+                "file": "it/optimization/DB.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "it/good-pratices/check-list-for-new-project.md"
+                "file": "it/optimization/DB.md"
               }
             }
           },
@@ -160,6 +160,9 @@
   "active": "69092c2c796250da",
   "lastOpenFiles": [
     "it/good-pratices/heuristic-rules-and-quotes.md",
+    "it/optimization/DB.md",
+    "it/optimization",
+    "it/good-pratices/code-style.md",
     "it/good-pratices/check-list-for-new-project.md",
     "it/good-pratices/advices-and-recommendations.md",
     "it/security/certificates-and-https/ssl-tls.md",
@@ -175,11 +178,9 @@
     "it/ide/intellij-idea/hotkeys.md",
     "description/common.md",
     "description/tags.md",
-    "it/good-pratices/code-style.md",
     "it/books.md",
     "self-development/soft-skills/advices.md",
     "it/vcs/git/cases.md",
-    "it/Untitled",
     "it/vcs/git/commands.md",
     "it/terms-and-concepts.md",
     "it/security/certificates-and-https",
@@ -190,7 +191,6 @@
     "it/database",
     "description",
     "it/testing/spock-framework/spock-in-action.md",
-    "it/testing/spock-framework/official-doc.md",
     "self-development/soft-skills",
     "it/time-management",
     "self-development",
