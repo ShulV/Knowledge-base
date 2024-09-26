@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "it/optimization/DB.md",
+                "file": "it/security/certificates-and-https/ssl-tls.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "it/optimization/DB.md",
+                "file": "it/security/certificates-and-https/ssl-tls.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "it/optimization/DB.md",
+                "file": "it/security/certificates-and-https/ssl-tls.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "it/optimization/DB.md"
+                "file": "it/security/certificates-and-https/ssl-tls.md"
               }
             }
           },
@@ -159,8 +159,8 @@
   },
   "active": "69092c2c796250da",
   "lastOpenFiles": [
-    "it/good-pratices/heuristic-rules-and-quotes.md",
     "it/optimization/DB.md",
+    "it/good-pratices/heuristic-rules-and-quotes.md",
     "it/optimization",
     "it/good-pratices/code-style.md",
     "it/good-pratices/check-list-for-new-project.md",
