@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "it/security/certificates-and-https/ssl-tls.md",
+                "file": "it/good-pratices/advices-and-recommendations.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "it/security/certificates-and-https/ssl-tls.md",
+                "file": "it/good-pratices/advices-and-recommendations.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "it/security/certificates-and-https/ssl-tls.md",
+                "file": "it/good-pratices/advices-and-recommendations.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "it/security/certificates-and-https/ssl-tls.md"
+                "file": "it/good-pratices/advices-and-recommendations.md"
               }
             }
           },
@@ -159,13 +159,13 @@
   },
   "active": "69092c2c796250da",
   "lastOpenFiles": [
-    "it/optimization/DB.md",
     "it/good-pratices/heuristic-rules-and-quotes.md",
+    "it/security/certificates-and-https/ssl-tls.md",
+    "it/optimization/DB.md",
     "it/optimization",
     "it/good-pratices/code-style.md",
     "it/good-pratices/check-list-for-new-project.md",
     "it/good-pratices/advices-and-recommendations.md",
-    "it/security/certificates-and-https/ssl-tls.md",
     "it/os/linux/commands/systemctl.md",
     "it/os/linux/commands/processes-and-monitoring.md",
     "it/os/linux/commands/packages.md",
