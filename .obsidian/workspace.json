@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "it/java/linters.md",
+                "file": "it/os/linux/commands/network.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "linters"
+              "title": "network"
             }
           }
         ],
@@ -67,7 +67,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "14507",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -108,7 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "it/java/linters.md",
+                "file": "it/os/linux/commands/network.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +118,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for linters"
+              "title": "Backlinks for network"
             }
           },
           {
@@ -192,8 +192,11 @@
   },
   "active": "95120ca409a75e75",
   "lastOpenFiles": [
-    "it/java/security.md",
+    "it/os/linux/commands/file system.md",
+    "it/database/postgresql/psql.md",
+    "it/ide/intellij-idea/hotkeys.md",
     "it/java/linters.md",
+    "it/java/security.md",
     "it/good-pratices/heuristic-rules-and-quotes.md",
     "it/good-pratices/code-style.md",
     "it/good-pratices/check-list-for-new-project.md",
@@ -207,21 +210,18 @@
     "it/books.md",
     "it/java/links.md",
     "it/os/linux/commands/processes-and-monitoring.md",
-    "it/os/linux/commands/file system.md",
     "it/optimization/DB.md",
     "it/optimization",
     "it/vcs/git/cases.md",
     "it/ide/intellij-idea/plugins.md",
     "it/time-management/advices.md",
     "it/time-management",
-    "it/database/postgresql/psql.md",
     "it/database/postgresql",
     "it/database",
     "it/os/linux/commands/network.md",
     "it/vcs/git/commands.md",
     "it/os/linux/commands/systemctl.md",
     "it/java/spring/spring-mvc.md",
-    "it/java/spring/spring-boot.md",
     "it/security/certificates-and-https",
     "it/security",
     "description",
