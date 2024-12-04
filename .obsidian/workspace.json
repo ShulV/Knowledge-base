@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "it/java/security.md",
+                "file": "it/security/Vulnerabilities.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "security"
+              "title": "Vulnerabilities"
             }
           }
         ],
@@ -81,7 +81,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "httpd",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "it/java/security.md",
+                "file": "it/security/Vulnerabilities.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +132,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for security"
+              "title": "Backlinks for Vulnerabilities"
             }
           },
           {
@@ -207,12 +207,13 @@
   "active": "b305d586d7bd6a92",
   "lastOpenFiles": [
     "it/os/linux/commands/network.md",
+    "it/security/Vulnerabilities.md",
+    "it/java/security.md",
     "it/database/postgresql/psql.md",
     "it/database/postgresql/pg_hba.md",
     "it/os/linux/commands/file system.md",
     "it/ide/intellij-idea/hotkeys.md",
     "it/java/linters.md",
-    "it/java/security.md",
     "it/good-pratices/heuristic-rules-and-quotes.md",
     "it/good-pratices/code-style.md",
     "it/good-pratices/check-list-for-new-project.md",
@@ -235,7 +236,6 @@
     "it/database/postgresql",
     "it/database",
     "it/vcs/git/commands.md",
-    "it/os/linux/commands/systemctl.md",
     "it/security/certificates-and-https",
     "it/security",
     "description",
