@@ -83,4 +83,21 @@ Java, наверное, более многословный язык, думаю
 
 ---
 
-## 
+## Определиться с основными кастомными исключениями проекта
+#exception #custom
+
+хорошие варианты, что встречал:
+```java
+//для того, чтобы кидать Listener'е очереди
+public class RepeatMessageException extends RuntimeException
+
+//главное исключение для апи, от него наследовать другие более конкретные...
+public class XmapApiException extends RuntimeException
+
+//для коммита транзакций
+@Transactional(noRollbackFor = CommitServiceException.class)
+public class CommitServiceException extends XmapApiException
+
+//общее для ошибок текущего сервиса, додумать ещё...
+public class ServiceException extends XmapApiException
+```
