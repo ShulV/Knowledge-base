@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "it/good-pratices/code-style.md",
+                "file": "it/database/postgresql/postgresql.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "code-style"
+              "title": "postgresql"
             }
           },
           {
@@ -121,7 +121,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "it/good-pratices/code-style.md",
+                "file": "it/database/postgresql/postgresql.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -131,7 +131,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for code-style"
+              "title": "Backlinks for postgresql"
             }
           },
           {
@@ -205,9 +205,12 @@
   },
   "active": "69092c2c796250da",
   "lastOpenFiles": [
+    "it/database/postgresql/pg_hba.md",
+    "it/database/postgresql/postgresql.md",
+    "it/database/postgresql/psql.md",
+    "it/good-pratices/code-style.md",
     "it/good-pratices/check-list-for-new-project.md",
     "it/good-pratices/advices-and-recommendations.md",
-    "it/good-pratices/code-style.md",
     "it/java/core.md",
     "images/Pasted image 20241211150356.png",
     "images/Pasted image 20241211150300.png",
@@ -215,11 +218,9 @@
     "Pasted image 20241210103646.png",
     "it/java/spring/transaction.md",
     "it/java/links.md",
-    "it/database/postgresql/psql.md",
     "it/java/security.md",
     "it/java/spring/spring-mvc.md",
     "it/java/spring/spring-boot.md",
-    "it/database/postgresql/pg_hba.md",
     "it/os/linux/commands/file system.md",
     "it/security/Vulnerabilities.md",
     "it/os/linux/commands/network.md",
