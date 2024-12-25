@@ -28,4 +28,28 @@
 
 ---
 
-##
+## Заменить дефолтный баннер
+#banner #ascii
+
+ASCII красивый текстовый баннер из обычного текста
+https://devops.datenkollektiv.de/banner.txt/index.html
+https://patorjk.com/software/taag/#p=display&h=1&f=Soft&t=Planets%20Server
+
+покрасить текст
+https://patorjk.com/text-color-fader/
+https://en.wikipedia.org/wiki/ANSI_escape_code#8-bit
+
+Добавить в banner.txt в /resources:
+
+Пример
+```
+${AnsiColor.208}▗▄▄▄▖▗▖  ▗▖▗▄▄▖ ▗▄▄▖ ▗▄▄▄▖ ▗▄▄▖ ▗▄▄▖  
+${AnsiColor.202}▐▌    ▝▚▞▘ ▐▌ ▐▌▐▌ ▐▌▐▌   ▐▌   ▐▌     
+${AnsiColor.208}▐▛▀▀▘  ▐▌  ▐▛▀▘ ▐▛▀▚▖▐▛▀▀▘ ▝▀▚▖ ▝▀▚▖  
+${AnsiColor.215}▐▙▄▄▖▗▞▘▝▚▖▐▌   ▐▌ ▐▌▐▙▄▄▖▗▄▄▞▘▗▄▄▞▘  
+${AnsiBackground.DEFAULT}${AnsiColor.DEFAULT}  
+Powered by Spring Boot ${spring-boot.version}
+```
+
+статья
+https://devops.datenkollektiv.de/create-your-own-spring-boot-banner.html
