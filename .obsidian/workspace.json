@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "it/java/spring/spring-boot.md",
+                "file": "it/java/spring/spring-security.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "spring-boot"
+              "title": "spring-security"
             }
           },
           {
@@ -121,7 +121,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "it/java/spring/spring-boot.md",
+                "file": "it/java/spring/spring-security.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -131,7 +131,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for spring-boot"
+              "title": "Backlinks for spring-security"
             }
           },
           {
@@ -205,8 +205,14 @@
   },
   "active": "69092c2c796250da",
   "lastOpenFiles": [
-    "it/js/jquery/migration.md",
+    "images/Pasted image 20241228121229.png",
+    "it/java/security.md",
+    "it/java/spring/spring-security.md",
+    "images/Pasted image 20241211150356.png",
+    "images/Pasted image 20241211150300.png",
+    "it/java/spring/spring-boot.md",
     "it/os/linux/commands/file system.md",
+    "it/js/jquery/migration.md",
     "it/js/jquery",
     "it/js",
     "it/os/linux/apache http server/workers.properties.md",
@@ -218,15 +224,11 @@
     "it/good-pratices/check-list-for-new-project.md",
     "it/good-pratices/advices-and-recommendations.md",
     "it/java/core.md",
-    "images/Pasted image 20241211150356.png",
-    "images/Pasted image 20241211150300.png",
     "images",
     "Pasted image 20241210103646.png",
     "it/java/spring/transaction.md",
     "it/java/links.md",
-    "it/java/security.md",
     "it/java/spring/spring-mvc.md",
-    "it/java/spring/spring-boot.md",
     "it/security/Vulnerabilities.md",
     "it/os/linux/commands/network.md",
     "it/ide/intellij-idea/hotkeys.md",
@@ -236,8 +238,6 @@
     "description/common.md",
     "self-development/soft-skills/advices.md",
     "README.md",
-    "it/terms-and-concepts.md",
-    "it/regexp.md",
     "it/optimization",
     "it/time-management",
     "it/database/postgresql",
