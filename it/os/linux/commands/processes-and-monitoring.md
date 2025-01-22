@@ -19,4 +19,8 @@ P.S. можно по PID убить процесс
 
 ---
 
-##
+#kill #command #terminal  #linux 
+#### Дропнуть все джава процессы
+```
+killall java -9
+```

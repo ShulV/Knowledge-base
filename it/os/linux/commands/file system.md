@@ -84,4 +84,21 @@ P.S. удобно искать утечки :)
 
 ----
 
+#### Разбить файл на несколько равных по размеру
+#linux #command #split #file 
+```bash
+split -n 8 ./bank.log
+```
+
+
+---
+
+## Очистить файл
+#clear #file #command #linux #input
+перезаписать пустотой
+```bash
+> filename
+```
+
+---
 

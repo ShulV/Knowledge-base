@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "it/java/spring/spring-security.md",
+                "file": "it/java/security.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "spring-security"
+              "title": "security"
             }
           },
           {
@@ -80,7 +80,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "grep",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -121,7 +121,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "it/java/spring/spring-security.md",
+                "file": "it/java/security.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -131,7 +131,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for spring-security"
+              "title": "Backlinks for security"
             }
           },
           {
@@ -205,21 +205,26 @@
   },
   "active": "69092c2c796250da",
   "lastOpenFiles": [
+    "it/js/jquery/migration.md",
+    "it/os/linux/commands/file system.md",
+    "it/os/linux/commands/systemctl.md",
+    "it/os/linux/commands/processes-and-monitoring.md",
+    "it/os/linux/commands/packages.md",
+    "it/os/linux/commands/network.md",
+    "it/database/postgresql/psql.md",
+    "it/regexp.md",
+    "it/java/spring/spring-security.md",
     "images/Pasted image 20241228121229.png",
     "it/java/security.md",
-    "it/java/spring/spring-security.md",
     "images/Pasted image 20241211150356.png",
     "images/Pasted image 20241211150300.png",
     "it/java/spring/spring-boot.md",
-    "it/os/linux/commands/file system.md",
-    "it/js/jquery/migration.md",
     "it/js/jquery",
     "it/js",
     "it/os/linux/apache http server/workers.properties.md",
     "it/database/postgresql/postgresql.md",
     "it/os/linux/apache http server",
     "it/database/postgresql/pg_hba.md",
-    "it/database/postgresql/psql.md",
     "it/good-pratices/code-style.md",
     "it/good-pratices/check-list-for-new-project.md",
     "it/good-pratices/advices-and-recommendations.md",
@@ -230,14 +235,10 @@
     "it/java/links.md",
     "it/java/spring/spring-mvc.md",
     "it/security/Vulnerabilities.md",
-    "it/os/linux/commands/network.md",
     "it/ide/intellij-idea/hotkeys.md",
     "it/java/linters.md",
     "it/good-pratices/heuristic-rules-and-quotes.md",
     "description/tags.md",
-    "description/common.md",
-    "self-development/soft-skills/advices.md",
-    "README.md",
     "it/optimization",
     "it/time-management",
     "it/database/postgresql",

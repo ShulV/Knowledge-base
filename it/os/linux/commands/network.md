@@ -152,3 +152,42 @@ Hit CTRL-C to stop the server
 ```
 
 ----
+
+## Настройка ssh-config
+#ssh #config 
+```bash
+# PROJECT_1 - xmap
+Host xmap_dev_jump
+    User v.shulpov
+    Hostname dev-xmap
+    Port 25022
+
+Host xmap_stage_app1
+    User v.shulpov
+    Hostname 198.12.21.20
+    ProxyJump xmap_dev_jump
+
+Host xmap_stage_app2
+    User v.shulpov
+    Hostname 198.12.21.21
+    ProxyJump xmap_dev_jump
+
+Host xmap_stage_db
+    User v.shulpov
+    Hostname 198.12.21.24
+    ProxyJump xmap_dev_jumpp
+
+# PROJECT_2
+
+Host project2
+    User admin
+    Hostname 50.250.15.205
+```
+
+можно подключаться так:
+```bash
+# project 1 (через jump-сервер)
+> ssh xmap_stage_app1
+# project 2
+ssh project2
+```
