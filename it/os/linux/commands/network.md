@@ -101,7 +101,7 @@ ssh -J <jump server1>,<jump server2>,<jump server3> <remote server>
 #http #httpd
 
 ```bash
-python3 -m http.server --directory /path/to/your/directory 8091
+python3 -m http.server --directory /srv/ 8091
 ```
 
 Команда  запускает простой HTTP-сервер, который служит файлами из текущей рабочей директории на порту 8091. Давайте разберем её подробнее:

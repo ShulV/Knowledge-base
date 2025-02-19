@@ -1,5 +1,5 @@
 
-## Remote JDM debug
+## Remote JVM debug
 #remote #debug #jvm #jdwp
 
 - добавил в /etc/systemd/system конфиги для сервисов с постфиксами "-debug"
