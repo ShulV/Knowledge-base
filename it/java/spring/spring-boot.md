@@ -29,7 +29,7 @@
 ---
 
 ## Заменить дефолтный баннер
-#banner #ascii
+#banner #ascii #font #шрифт #баннер #
 
 ASCII красивый текстовый баннер из обычного текста
 https://devops.datenkollektiv.de/banner.txt/index.html

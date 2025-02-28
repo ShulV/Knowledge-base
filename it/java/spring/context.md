@@ -27,15 +27,19 @@ public RestTemplate alfaBankRestTemplate() {
 }
 ```
 
-P.S. если нет @Primary на данный класс/интерфейс, то можно писать без @Qualifier:
-спринг поймет по названию какой бин внедрить (видимо, юзает рефлексию)
-```java
-//конструктор
-public AlfaBankService(RestTemplate alfaBankRestTemplate){
+P.S. если нет @Primary на данный класс/интерфейс, и нет @Qualifier, но реализаций для внедрения несколько будет ошибка, подсказывающая что нужно юзать Qualifier
+```bash
+Description:
 
-this.restTemplate=alfaBankRestTemplate;
+Parameter 3 of constructor in ru.xmap.api.service.identification_system.systems.impl.id_provider.alfa_id.jms.AlfaIdIdentificationSystemListener required a single bean, but 2 were found:
+<------>- alfaIdIdentificationSystemImpl: defined in file [/home/shulpov.v/IdeaProjects/application/keeper-api/build/classes/java/main/ru/xmap/api/service/identification_system/systems/impl/id_provider/alfa_id/AlfaIdIdentificationSystemImpl.class]
+<------>- testIdIdentificationSystemImpl: defined in file [/home/shulpov.v/IdeaProjects/application/xmap-api/build/classes/java/main/ru/xmap/api/service/identification_system/systems/impl/id_provider/alfa_id/TestIdIdentificationSystemImpl.class]
 
-}
+This may be due to missing parameter name information
+
+Action:
+
+Consider marking one of the beans as @Primary, updating the consumer to accept multiple beans, or using @Qualifier to identify the bean that should be consumed
 ```
 
 

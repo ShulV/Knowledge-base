@@ -85,7 +85,7 @@ P.S. удобно искать утечки :)
 ----
 
 #### Разбить файл на несколько равных по размеру
-#linux #command #split #file 
+#linux #command #split #file #separate
 ```bash
 split -n 8 ./bank.log
 ```
@@ -101,4 +101,10 @@ split -n 8 ./bank.log
 ```
 
 ---
+
+## Вывод последней строки
+#tail #last #end
+```bash
+sudo tail -n 1 /srv/xmap-api/logs/some.log
+```
 
