@@ -1,5 +1,16 @@
 
 ---
+## Получить свой публичный ключ
+#public #key
+```bash
+# дефолт
+cat ~/.ssh/id_rsa.pub
+# более современный и короткий
+cat ~/.ssh/id_ed25519.pub
+```
+P.S. положить в ~/.ssh/authorized_keys на удаленном сервере к тому пользователю, к которому нужно будет подключаться
+
+---
 ## Типы SSH-ключей
 #terminal #command #ssh #network #rsa #ed25519 #security
 
