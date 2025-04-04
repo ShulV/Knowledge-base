@@ -115,3 +115,22 @@ select lo_get(77225094)
 
 ---
 
+# Условные UNIQUE
+#conditional #partitial #index #unique
+
+Создание частичного уникального индекса осуществляется следующим образом:
+
+```sql
+CREATE UNIQUE INDEX stop_myc ON stop (col_a) WHERE (col_b = 1);
+```
+
+```sql
+CREATE UNIQUE INDEX client_login_case_deleted_idx ON client USING btree (login, (  
+CASE deleted  
+    WHEN 1 THEN NULL::integer  
+    ELSE 1  
+END));
+```
+для каждого активного клиента уникальный логин. Для удалённых клиентов этот индекс не применяется, и они могут иметь повторяющиеся логины.
+
+---
