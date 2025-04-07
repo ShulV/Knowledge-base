@@ -85,3 +85,21 @@ psql -l
 psql: error: connection to server on socket "/var/run/postgresql/.s.PGSQL.5432" failed: FATAL:  role "viktor" does not exist
 
 ```
+
+---
+
+## Создать нового пользователя
+#create #user #role 
+```bash
+CREATE USER app_admin WITH PASSWORD 'password123';
+```
+
+## Дать пользователю все привилегии на БД
+#grant #privileges #user #all
+```sql
+GRANT ALL PRIVILEGES ON DATABASE app_database TO app_admin;
+```
+
+---
+
+##

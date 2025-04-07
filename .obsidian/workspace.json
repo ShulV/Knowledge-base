@@ -13,12 +13,24 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "it/java/security.md",
+                "file": "it/java/builder/gradle.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "security"
+              "title": "gradle"
+            }
+          },
+          {
+            "id": "08e0e83958a09bb0",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.8.4"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.8.4"
             }
           },
           {
@@ -49,7 +61,8 @@
               "title": "core"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -68,7 +81,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -121,17 +135,16 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "it/java/security.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
                 "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
+                "backlinkCollapsed": true,
+                "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for security"
+              "title": "Backlinks"
             }
           },
           {
@@ -191,7 +204,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -203,31 +216,33 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "69092c2c796250da",
+  "active": "08e0e83958a09bb0",
   "lastOpenFiles": [
-    "it/js/jquery/migration.md",
-    "it/os/linux/commands/file system.md",
-    "it/os/linux/commands/systemctl.md",
-    "it/os/linux/commands/processes-and-monitoring.md",
-    "it/os/linux/commands/packages.md",
-    "it/os/linux/commands/network.md",
-    "it/database/postgresql/psql.md",
+    "it/good-pratices/check-list-for-new-project.md",
+    "it/good-pratices/advices-and-recommendations.md",
+    "it/books.md",
+    "it/good-pratices/code-style.md",
+    "it/good-pratices/heuristic-rules-and-quotes.md",
+    "README.md",
     "it/regexp.md",
+    "it/terms-and-concepts.md",
+    "it/os/macos/commands.md",
+    "it/database/postgresql/postgresql.md",
+    "it/database/postgresql/psql.md",
+    "it/os/linux/commands/file system.md",
     "it/java/spring/spring-security.md",
+    "it/os/macos",
     "images/Pasted image 20241228121229.png",
     "it/java/security.md",
     "images/Pasted image 20241211150356.png",
     "images/Pasted image 20241211150300.png",
     "it/java/spring/spring-boot.md",
+    "it/js/jquery/migration.md",
     "it/js/jquery",
     "it/js",
     "it/os/linux/apache http server/workers.properties.md",
-    "it/database/postgresql/postgresql.md",
     "it/os/linux/apache http server",
     "it/database/postgresql/pg_hba.md",
-    "it/good-pratices/code-style.md",
-    "it/good-pratices/check-list-for-new-project.md",
-    "it/good-pratices/advices-and-recommendations.md",
     "it/java/core.md",
     "images",
     "Pasted image 20241210103646.png",
@@ -235,15 +250,13 @@
     "it/java/links.md",
     "it/java/spring/spring-mvc.md",
     "it/security/Vulnerabilities.md",
+    "it/os/linux/commands/network.md",
     "it/ide/intellij-idea/hotkeys.md",
     "it/java/linters.md",
-    "it/good-pratices/heuristic-rules-and-quotes.md",
-    "description/tags.md",
     "it/optimization",
     "it/time-management",
     "it/database/postgresql",
     "it/database",
-    "it/security/certificates-and-https",
-    "it/security"
+    "it/security/certificates-and-https"
   ]
 }
