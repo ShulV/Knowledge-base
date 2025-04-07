@@ -24,7 +24,7 @@ P.S. только в целях разработки и тестирования
 
 ---
 
-## Добавление CA в JVM
+## Добавление CA (crt) в JVM
 #ssl #tls #store #keytool #cacert #trust #crt #certificate 
 ```bash
 sudo /home/shulpov.v/.jdks/openjdk-21.0.2/bin/keytool -importcert -trustcacerts -noprompt -cacerts -storepass changeit -file /home/shulpov.v/Загрузки/certs/xmap.crt -alias xmap
@@ -40,3 +40,20 @@ sudo /home/shulpov.v/.jdks/openjdk-21.0.2/bin/keytool -importcert -trustcacerts 
 8. **`-alias xmap`** – имя (алиас), под которым этот сертификат будет сохранен в хранилище ключей.
 
 ---
+
+## Добавление CA's (PEM) в JVM
+#ssl #tls #store #keytool #cacert #trust #crt #certificate #pem
+```bash
+sudo /home/shulpov.v/.jdks/openjdk-21.0.2/bin/keytool -importcert -trustcacerts -noprompt -cacerts -storepass changeit -file ~/mts.pem
+#Certificate was added to keystore
+```
+
+P.S. получил такую запись, видимо, всё ок добавилось, но работу не проверил
+
+----
+
+## Где хранятся корневые серты в linux:
+#ca
+```
+/etc/pki/ca-trust/source/anchors/
+```

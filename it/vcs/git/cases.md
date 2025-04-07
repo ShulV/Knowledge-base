@@ -53,5 +53,18 @@ P.S. количество changes в гитлабе стало много, то 
 
 ---
 
-##
+## Посмотреть количество коннектов на сервере
+#connect #sql #stat #activity #datname #application #pool #connection
+
+по коннектам к базам данных на сервере
+```sql
+SELECT count(*), datname FROM pg_stat_activity group by datname;
+```
+
+по коннектам приложений к базам
+```sql
+select application_name, COUNT(*) as count from pg_stat_activity group by application_name
+```
+
+---
 
