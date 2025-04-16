@@ -101,3 +101,5 @@ public class CommitServiceException extends XmapApiException
 //общее для ошибок текущего сервиса, додумать ещё...
 public class ServiceException extends XmapApiException
 ```
+
+
