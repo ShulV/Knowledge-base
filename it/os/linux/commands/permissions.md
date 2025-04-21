@@ -21,6 +21,26 @@ cat /etc/group
 - `список_пользователей` — список пользователей, разделенных запятыми, которые входят в данную группу.
 
 ---
+## Посмотреть группы определенного пользователя
+#group #user #list
+```bash
+id -Gn <username>
+```
+
+---
+## Добавить группу
+#add #group 
+```bash
+sudo groupadd [опции] <groupname>
+```
+---
+## Добавить пользователя
+#add #user 
+```bash
+sudo useradd [опции] <username>
+```
+
+---
 ## Добавить пользователя в группу
 #usermod #user #group #add
 
@@ -55,4 +75,21 @@ awk -F'[/:]' '{if ($3 >= 1000 && $3 != 65534) print $1}' /etc/passwd
 до 1000 - системные
 
 ---
-## f
+## Посмотреть хэши паролей пользователей:
+#hash #password #user 
+```bash
+sudo cat /etc/shadow
+```
+
+---
+## Посмотреть поведение ввода пароля для пользователей
+#privileges #nopasswd #pass
+```bash
+sudo cat /etc/sudoers
+```
+P.S.: 
+Sudoers allows particular users to run various commands as
+the root user, without needing the root password
+
+---
+

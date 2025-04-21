@@ -48,4 +48,17 @@ Consider marking one of the beans as @Primary, updating the consumer to accept m
 
 ---
 
-##
+## Интересные способы внедрения переменных из конфига
+#spring-beans #value #annotation #spel
+через SpEL:
+```java
+@Value("#{'${listOfValues}'.split(',')}") private List<String> valuesList;
+```
+мапа:
+```java
+// в конфиге valuesMap={key1: '1', key2: '2', key3: '3'}
+@Value("#{${valuesMap}}") private Map<String, Integer> valuesMap;
+```
+
+---
+
