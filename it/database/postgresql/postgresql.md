@@ -24,25 +24,6 @@ select ctid from operation
 ...
 ```
 
----
-
-## Пример удаления дубликатов
-#duplicate #delete #ctid 
-```sql
--- удаление всех товаров-дубликатов (1-ый остается)
-DELETE FROM merchant_request_info mri USING (
-SELECT MIN(ctid) as ctid, merchant_request, name, quantity, "sum"
-FROM merchant_request_info
-GROUP BY (merchant_request, name, quantity, "sum") HAVING COUNT(*) > 1
-) first_from_duplicates
-WHERE mri.merchant_request = first_from_duplicates.merchant_request
-AND mri.name = first_from_duplicates.name
-AND mri.quantity = first_from_duplicates.quantity
-AND mri.sum = first_from_duplicates.sum
-AND mri.ctid <> first_from_duplicates.ctid;
-```
-
-
 ----
 ## bytea VS LOB (large object)/oid
 #bytea #blob #oid
@@ -112,25 +93,5 @@ select lo_get(77225094)
 ```
 
 - Для получения bytea файла хватит обычной выборки поля c bytea-типом
-
----
-
-# Условные UNIQUE
-#conditional #partitial #index #unique
-
-Создание частичного уникального индекса осуществляется следующим образом:
-
-```sql
-CREATE UNIQUE INDEX stop_myc ON stop (col_a) WHERE (col_b = 1);
-```
-
-```sql
-CREATE UNIQUE INDEX client_login_case_deleted_idx ON client USING btree (login, (  
-CASE deleted  
-    WHEN 1 THEN NULL::integer  
-    ELSE 1  
-END));
-```
-для каждого активного клиента уникальный логин. Для удалённых клиентов этот индекс не применяется, и они могут иметь повторяющиеся логины.
 
 ---
