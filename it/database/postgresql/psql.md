@@ -69,4 +69,37 @@ psql -U viktor xmap < /home/shulpov.v/xmap-2024-11-13T00\:01\:01.sql
 
 ---
 
+## Узнать какие есть БД
+#all #db #postgres #list #role #psql
+если пользователь - postgres
+```bash
+sudo -u postgres psql -l
+```
+
+P.S. так будет проверяться под пользователем с именем текущего юзера в ОС (например, в viktor@some-server пользователь системы - viktor, команда сделает что-то такое: sudo -u viktor psql -l и если пользователя не будет, вернет ошибку)
+```bash
+psql -l
+```
+пример ошибки
+```bash
+psql: error: connection to server on socket "/var/run/postgresql/.s.PGSQL.5432" failed: FATAL:  role "viktor" does not exist
+
+```
+
+---
+
+## Создать нового пользователя
+#create #user #role 
+```bash
+CREATE USER app_admin WITH PASSWORD 'password123';
+```
+
+## Дать пользователю все привилегии на БД
+#grant #privileges #user #all
+```sql
+GRANT ALL PRIVILEGES ON DATABASE app_database TO app_admin;
+```
+
+---
+
 ##

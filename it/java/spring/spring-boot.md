@@ -29,11 +29,11 @@
 ---
 
 ## Заменить дефолтный баннер
-#banner #ascii
+#banner #ascii #font #шрифт #баннер #
 
 ASCII красивый текстовый баннер из обычного текста
 https://devops.datenkollektiv.de/banner.txt/index.html
-https://patorjk.com/software/taag/#p=display&h=1&f=Soft&t=Planets%20Server
+c
 
 покрасить текст
 https://patorjk.com/text-color-fader/
