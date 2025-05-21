@@ -6,9 +6,49 @@
 ```bash
 psql -U postgres -h localhost -d xmap_test -f xmap-dump-21-06-2024.sql
 ```
+``-U _`username`_``  
+``--username=_`username`_``
+
+``-d _`dbname`_``  
+``--dbname=_`dbname`_``
+
+``-h _`hostname`_``  
+``--host=_`hostname`_``
+
+``-p _`port`_``  
+``--port=_`port`_``
+
+``-f _`filename`_``  
+``--file=_`filename`_``
+Write all query output into file _`filename`_, in addition to the normal output destination.
+
+``-o _`filename`_``  
+``--output=_`filename`_`` 
+Put all query output into file _`filename`_. This is equivalent to the command `\o`.
+
+
+---
+## Разница флагов -u и -U
+- **Флаг `-u`** используется командой `sudo` для временной смены текущего пользователя Linux/Unix.
+- **Флаг `-U`** используется командой `psql` для указания пользователя PostgreSQL, от имени которого производится подключение к базе данных.
 
 ---
 
+## Подключение к psql под postgres пользователем
+```bash
+sudo -u postgres psql
+```
+
+----
+## Выполнить psql-команду,  из терминала ОС
+```bash
+sudo -u postgres psql -c "\du";
+```
+
+-c _`command`
+--command=_`command`
+
+---
 ## подключение к БД
 ```bash
 psql -U postgres -d  xmap-test
@@ -17,7 +57,7 @@ psql -U postgres -d  xmap-test
 P.S при дефолт настройках
 ```bash
 # зайти в psql под postgres юзером
-sudo -U postgres psql
+sudo -u postgres psql
 
 # зайти в psql в конкретную БД
 psql -U viktor -d database_name
@@ -102,4 +142,8 @@ GRANT ALL PRIVILEGES ON DATABASE app_database TO app_admin;
 
 ---
 
+
+```sql
+ALTER USER user_name WITH PASSWORD 'new_password';
+```
 ##
