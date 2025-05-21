@@ -53,3 +53,16 @@ Powered by Spring Boot ${spring-boot.version}
 
 статья
 https://devops.datenkollektiv.de/create-your-own-spring-boot-banner.html
+
+----
+
+## Дефолт скрипт для исполнения при старте приложения
+#schema #script #sql
+
+Скрипт, который запускается вместе со стартом приложения.
+Создать файл `schema.sql` и поместить его в `/resources`
+
+P.S. для локал разработки
+
+----
+
