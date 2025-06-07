@@ -113,3 +113,23 @@ docker restart <container_id>
 
 ---
 
+## монитрование
+#mount #docker
+### узнать тип монитрования
+```bash
+docker inspect <container_name>
+```
+P.S. выдает и много другой информации
+### запуск с типом bind
+#bind
+```bash
+docker run --name nginx-mount-bind -v /tmp/nginx:/usr/share/nginx/html -p 80:80 nginx
+```
+P.S. этот тип по умолчанию
+P.S. /usr/share/nginx/html - папка по умолчанию, где nginx хранит файлы html страниц (как минимум основной и 50x)
+### запуск с типом volume
+#volume
+```bash
+docker run --name nginx-mount-volume -v nginx-volume-name:/usr/share/nginx/html -p 80:80 nginx
+```
+
