@@ -146,4 +146,19 @@ GRANT ALL PRIVILEGES ON DATABASE app_database TO app_admin;
 ```sql
 ALTER USER user_name WITH PASSWORD 'new_password';
 ```
-##
+
+---
+## Посмотреть настройки БД
+```bash
+SHOW all;
+```
+
+## Посмотреть директорию с данными БД
+#directory #data #postgres
+```bash
+SHOW data_directory;
+```
+P.S. `/var/lib/postgresql/data` например такой результат
+
+---
+
