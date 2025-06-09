@@ -34,3 +34,10 @@ list.get(7);
 ```java
 Collections.reverse(list);
 ```
+
+Конвертация array[] , List<>
+#array #list #convert
+```java
+List<String> wordsList = Arrays.asList("I", "love", "learning");
+String[] wordsArray = wordsList.toArray();
+```
