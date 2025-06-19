@@ -65,23 +65,16 @@ P.S. через `WHERE IN (...)` получается не очень, т.к. т
 
 ---
 
-## Повторяющийся шаблон
+## Посмотреть количество коннектов на сервере
+#connect #sql #stat #activity #datname #application #pool #connection
 
+по коннектам к базам данных на сервере
+```sql
+SELECT count(*), datname FROM pg_stat_activity group by datname;
 ```
-/^\d{4}(?:,+\d{4})*$/gm
-```
-**валидно**
-4444,4444,4444
-1111
-1111,2222
-1234,,1234
-**невалидно**
-12345
-12345678
-1234,56789
-1234,5678,
-123
-123f
-1234.1234
 
-----
+по коннектам приложений к базам
+```sql
+select application_name, COUNT(*) as count from pg_stat_activity group by application_name
+```
+

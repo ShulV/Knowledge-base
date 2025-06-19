@@ -157,6 +157,13 @@ psql -U postgres
 psql -U postgres -d xmap
 ``` 
 
+## Инициализация при запуске контейнера
+#initdb #entrypoint
+`docker-entrypoint-initdb.d.  - файл с действиями/скриптами
+можно сделать монтирование и изменить скрипты инициализации
+```bash
+docker run --name test-pg-withdata -p 5555:5432 -e POSTGRES_PASSWORD=rootroot -d -v C:\tmp\sql:/docker-entrypoint-initdb.d postgres
+```
+P.S. скрипты упорядочены по названия и выполняются в том же порядке
+
 ---
-
-
