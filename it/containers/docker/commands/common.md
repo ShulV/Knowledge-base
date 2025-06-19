@@ -133,37 +133,10 @@ P.S. /usr/share/nginx/html - папка по умолчанию, где nginx х
 docker run --name nginx-mount-volume -v nginx-volume-name:/usr/share/nginx/html -p 80:80 nginx
 ```
 
-## postgres
-#postgres #docker
-### запуск контейнера
+---
+### Логи
 ```bash
-docker run -p 5555:5432 -d --name pg-17 -e POSTGRES_PASSWORD=rootroot postgres
+docker logs <ID или имя контейнера>
 ```
-`rootroot` - пароль для суперпользователя
-`-e` - env переменнаяэ
-
-## заходим в psql
-#psql #docker
-1) в ОС
-```bash
-docker exec -it pg-17 bash
-```
-2) в psql
-```bash
-psql -U postgres
-```
-в БД с названием `xmap`
-```bash
-psql -U postgres -d xmap
-``` 
-
-## Инициализация при запуске контейнера
-#initdb #entrypoint
-`docker-entrypoint-initdb.d.  - файл с действиями/скриптами
-можно сделать монтирование и изменить скрипты инициализации
-```bash
-docker run --name test-pg-withdata -p 5555:5432 -e POSTGRES_PASSWORD=rootroot -d -v C:\tmp\sql:/docker-entrypoint-initdb.d postgres
-```
-P.S. скрипты упорядочены по названия и выполняются в том же порядке
 
 ---

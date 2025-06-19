@@ -24,7 +24,7 @@
 | 3.0     | 1 year and 8 months ago<br><br>(24 Nov 2022)  | Ended 8 months ago<br><br>(24 Nov 2023)             | Ends in 6 months and 2 weeks<br><br>(24 Feb 2025)   | [3.0.13](https://github.com/spring-projects/spring-boot/releases/tag/v3.0.13 "Release Notes / Changelog")<br><br>(23 Nov 2023) |
 | 2.7     | 2 years and 2 months ago<br><br>(19 May 2022) | Ended 8 months ago<br><br>(24 Nov 2023)             | Ends in 1 year<br><br>(24 Aug 2025)                 | [2.7.18](https://github.com/spring-projects/spring-boot/releases/tag/v2.7.18 "Release Notes / Changelog")<br><br>(23 Nov 2023) |
 | 2.6     | 2 years and 8 months ago<br><br>(17 Nov 2021) | Ended 1 year and 8 months ago<br><br>(24 Nov 2022)  | Ended 5 months and 2 weeks ago<br><br>(24 Feb 2024) | [2.6.15](https://github.com/spring-projects/spring-boot/releases/tag/v2.6.15 "Release Notes / Changelog")<br><br>(18 May 2023) |
-Совместимость gradle и java: [[gradle#Gradle/java compatibility]]
+Совместимость gradle и java: [[it/java/builder/gradle#Gradle/java compatibility]]
 
 ---
 

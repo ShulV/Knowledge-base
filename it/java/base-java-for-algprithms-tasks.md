@@ -41,3 +41,18 @@ Collections.reverse(list);
 List<String> wordsList = Arrays.asList("I", "love", "learning");
 String[] wordsArray = wordsList.toArray();
 ```
+
+---
+## Переполнение
+```java
+int a = 2000000000;
+//int: -2,147,483,648 to 2,147,483,647.
+
+long b = 2000000000 * 2000000000;//переполнение и неверный результат
+long safeResult = a * a;//переполнение и неверный результат
+
+long safeResult = (long) a * a;//все ок
+long b = 2000000000L * 2000000000;//все ок
+long b = (long) 2000000000 * 2000000000;//все ок
+```
+---
