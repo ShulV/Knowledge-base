@@ -24,11 +24,10 @@
 	<appender name="MAIN-FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">  
 	    <file>${LOG_FOLDER}/main.log</file>  
 	    <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">  
-	        <Pattern>            ${LOG_PATTERN}  
-	        </Pattern>  
+	        <Pattern>${LOG_PATTERN}</Pattern>  
 	    </encoder>  
 	    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">  
-	        <fileNamePattern>            ${LOG_FOLDER}/archived/main.%d{yyyy-MM-dd}.log.gz  
+	        <fileNamePattern>${LOG_FOLDER}/archived/main.%d{yyyy-MM-dd}.log.gz  
 	        </fileNamePattern>  
 	    </rollingPolicy>
     </appender>  
@@ -57,5 +56,18 @@
 	<property name="LOG_FOLDER" value="logs"/>  
 	<property name="LOG_PATTERN" value="%d{dd-MM-yyyy HH:mm:ss.SSS} [%thread] %level %logger{36} - %msg%n"/>
 	%% .... %%
+</configuration>
+```
+
+## variable
+```xml
+<configuration>
+  <variable scope="context" name="nodeId" value="firstNode" />
+  <appender name="FILE" class="ch.qos.logback.core.FileAppender">
+    <file>/opt/${nodeId}/myApp.log</file>
+    <encoder>
+      <pattern>%kvp %msg%n</pattern>
+    </encoder>
+  </appender>
 </configuration>
 ```
