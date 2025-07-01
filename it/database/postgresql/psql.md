@@ -162,3 +162,22 @@ P.S. `/var/lib/postgresql/data` например такой результат
 
 ---
 
+## Поднять значение итератора в sequence
+
+```sql
+SELECT setval('my_sequence', currval('my_sequence') + 1000);
+```
+
+select nextval ( 'client_login_id_seq' )
+
+---
+
+## Индекс на колонку на уникальность
+#unique #constraint #index #idx
+```sql
+create unique index if not exists  
+    client_workspace_role_code_idx on client_workspace_role (code);
+```
+
+---
+

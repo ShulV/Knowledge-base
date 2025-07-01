@@ -78,3 +78,20 @@ SELECT count(*), datname FROM pg_stat_activity group by datname;
 select application_name, COUNT(*) as count from pg_stat_activity group by application_name
 ```
 
+
+---
+## serial значения отстали
+#setval #nextval #currval #sequence #max
+```sql
+select nextval('permission_section_id_seq');-- для инициализации перед вызовом setval. Значение все равно затрет setval, так что эта команда не влияет на значение
+select setval('permission_section_id_seq', (select max(id) from permission_section));
+```
+
+P.S. был случай, когда вставляли значения в таблицу, используя в качестве значения id `max(id)`, таким образом sequence не поднимался, а потом падал, когда делали вставку с использованием встроенного `nextval
+
+```sql
+select currval('permission_section_id_seq');--тоже падал без инициализации
+```
+
+---
+

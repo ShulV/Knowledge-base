@@ -6,5 +6,11 @@
 `ctrl` + `alt` + `H` 
 
 ---
+## Изменить регистр всего блока
+#upper #case #toggle
+`ctrl` + `shift` + `u`
 
-##
+Toggle Case настройка
+
+---
+
