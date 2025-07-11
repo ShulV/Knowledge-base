@@ -2,7 +2,6 @@
 ---
 ## chattr и lsattr
 #неизменяемый #флаг
-
 ```bash
 chattr опции [оператор][атрибуты] файлы
 ```
@@ -20,7 +19,6 @@ sudo chattr +i /srv/xmap-api/xmap-api.jar
 P.S. даже под SUDO не получится изменять файлы. Нужен, чтобы случайно не удалить что-то важное :)
 
 ---
-
 ## Копирование между серверами
 #copy #scp
 ```bash
@@ -28,7 +26,6 @@ scp /home/shulpov.v/IdeaProjects/application/xmap/build/libs/xmap-3.95-SNAPSHOT.
 ```
 
 ---
-
 ## Информация о файлах и каталогах
 #ls #la #command #linux
 ```bash
@@ -58,17 +55,15 @@ ls -ld /usr/bin/p*
 - `-d` — показывает только сами директории, без их содержимого.
 - p*` — маска шаблона, означающая, что нужно выбрать все элементы, названия которых начинаются с буквы "p".
 ---
-
 ## Найти строки, включающие подстроку
 #grep #command #search
 
 ```bash
 grep "operation_id = '1092222" log_file.txt
 ```
-
-
+---
 ## Найти строки в файлах, где встречается подстрока
-#grep #search #recusive #substring #file
+#grep #search #recursive #substring #file
 
 ```bash
 grep -Ri 'linux' /home/user
@@ -81,7 +76,6 @@ grep -Ri 'linux' /home/user
 - `-v`: Показывать только непересекающиеся строки.
 
 ---
-
 ## Найти самые крупные файлы
 #monitoring 
 Найдет самые большие по размеру директории в текущей директории и выведет всё.
@@ -92,28 +86,33 @@ du -ah | sort -rh | head -n 10
 P.S. удобно искать утечки :)
 
 ----
-
 #### Разбить файл на несколько равных по размеру
 #linux #command #split #file #separate
 ```bash
 split -n 8 ./bank.log
 ```
-
-
 ---
-
 ## Очистить файл
 #clear #file #command #linux #input
 перезаписать пустотой
 ```bash
 > filename
 ```
-
 ---
-
 ## Вывод последней строки
 #tail #last #end
 ```bash
 sudo tail -n 1 /srv/xmap-api/logs/some.log
 ```
-
+---
+## Найти файлы с определенным расширением
+#search #find #recursive 
+```bash
+find /path/ -type f -name '*.lock'
+```
+---
+## Удалить файлы с определенным расширением
+#delete #remove #recursive #find 
+```bash
+sudo find ~/IdeaProjects/ -type f -name '*.lock' -delete
+```

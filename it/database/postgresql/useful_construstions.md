@@ -94,4 +94,21 @@ select currval('permission_section_id_seq');--тоже падал без ини�
 ```
 
 ---
+## Порядковые номера
+#row_number 
+```sql
+SELECT ca.id AS account_id,  
+       ca.account_number AS old_account_number,  
+       cl.id AS client_id,  
+       cl.login,  
+       ROW_NUMBER() OVER(PARTITION BY cl.id ORDER BY ca.id) AS account_sequence_number  
+  FROM client_account ca  
+  JOIN client cl ON ca.client = cl.id
+```
 
+`PARTITION BY` - чтобы для каждой партиции (секции) отчёт начинался с единицы
+`ORDER BY ca.id` - принцип установки порядкового номера
+
+P.S. тут получаем порядковые номера аккаунтов для конкретных клиентов. Т.е. если у клиента 3 аккаунта, будут порядковые номера 1, 2 и 3.
+
+---

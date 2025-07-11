@@ -14,3 +14,6 @@ Toggle Case настройка
 
 ---
 
+## Окно замены строки
+#replace #string #substring #refactoring
+`Ctrl+R` (Windows/Linux) или `Cmd+Shift+F` (Mac OS X) для открытия окна замены.
