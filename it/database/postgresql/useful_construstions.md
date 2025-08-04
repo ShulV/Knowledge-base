@@ -112,3 +112,20 @@ SELECT ca.id AS account_id,
 P.S. тут получаем порядковые номера аккаунтов для конкретных клиентов. Т.е. если у клиента 3 аккаунта, будут порядковые номера 1, 2 и 3.
 
 ---
+## автоинкремент
+#serial #generated #identity #always
+**1) GENERATED ALWAYS AS IDENTITY**
+> гибкий вариант автоинкремента
+```sql
+id integer generated always as identity (minvalue 5 increment by 2 maxvalue 1000 cache 10000000 cycle)
+```
+
+**2) SERIAL**
+> простой и удобный для большинства случаев, создает скрытую последовательность 
+```sql
+id BIGSERIAL
+-- скрытая последовательность BIGINT NOT NULL DEFAULT nextval('sequence_name')
+```
+
+---
+

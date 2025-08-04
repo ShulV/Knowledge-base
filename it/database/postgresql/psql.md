@@ -32,13 +32,6 @@ Put all query output into file _`filename`_. This is equivalent to the command�
 - **Флаг `-u`** используется командой `sudo` для временной смены текущего пользователя Linux/Unix.
 - **Флаг `-U`** используется командой `psql` для указания пользователя PostgreSQL, от имени которого производится подключение к базе данных.
 
----
-
-## Подключение к psql под postgres пользователем
-```bash
-sudo -u postgres psql
-```
-
 ----
 ## Выполнить psql-команду,  из терминала ОС
 ```bash
@@ -47,6 +40,13 @@ sudo -u postgres psql -c "\du";
 
 -c _`command`
 --command=_`command`
+
+---
+
+## Подключение к psql под postgres пользователем
+```bash
+sudo -u postgres psql
+```
 
 ---
 ## подключение к БД
@@ -65,6 +65,9 @@ psql -U viktor -d database_name
 
 P.S. если сделать пользователя таким же, как в системе, то можно будет не вводить пароль, он будет тянутся оттуда. (Например, в viktor@fedora в линукс, viktor в postgresql)
 
+```bash
+psql -h <host> -p <port> -U <username> -W <password> <database>
+```
 
 ---
 ## List all databases
@@ -140,8 +143,19 @@ CREATE USER app_admin WITH PASSWORD 'password123';
 GRANT ALL PRIVILEGES ON DATABASE app_database TO app_admin;
 ```
 
----
+на все таблицы
+```sql
+GRANT ALL ON ALL TABLES IN SCHEMA public TO app_admin;
+```
 
+на схему
+```sql
+GRANT ALL ON SCHEMA public TO app_admin;
+```
+
+---
+## Изменить пароль
+#change #password #alter
 
 ```sql
 ALTER USER user_name WITH PASSWORD 'new_password';
