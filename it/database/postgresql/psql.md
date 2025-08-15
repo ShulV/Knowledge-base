@@ -109,6 +109,10 @@ psql -h <host> -p <port> -U <username> -W <password> <database>
 psql -U viktor xmap < /home/shulpov.v/xmap-2024-11-13T00\:01\:01.sql
 ```
 
+## Залить дамп из DMP файла
+```bash
+sudo -u postgres psql -h 127.0.0.1 -p 5432 -U my_user -W my_db < by_db_14-07-2025.dmp
+```
 
 ---
 
