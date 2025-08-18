@@ -13,6 +13,7 @@ AND mri.quantity = first_from_duplicates.quantity
 AND mri.sum = first_from_duplicates.sum
 AND mri.ctid <> first_from_duplicates.ctid;
 ```
+> **ctid** - это ==скрытое системное поле, которое представляет собой уникальный идентификатор физического расположения строки в таблице==. Он состоит из двух чисел: номера блока (страницы) и смещения внутри этого блока, где хранится строка.
 
 ---
 ## Условные UNIQUE
@@ -126,6 +127,17 @@ id integer generated always as identity (minvalue 5 increment by 2 maxvalue 1000
 id BIGSERIAL
 -- скрытая последовательность BIGINT NOT NULL DEFAULT nextval('sequence_name')
 ```
+
+---
+
+## Разные способы получить временную метку
+#time #date #now #timestamp #clock #current_timestamp #clock_timestamp
+- **CURRENT_TIMESTAMP / NOW():**
+    - Возвращают фиксированное значение начала транзакции.
+    - Удобны для операций, зависящих от единого значения времени на весь период транзакции.
+- **CLOCK_TIMESTAMP():**
+    - Всегда возвращает точное текущее время.
+    - Обновляет значение каждый раз при каждом новом вызове.
 
 ---
 
