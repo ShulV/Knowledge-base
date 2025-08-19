@@ -181,7 +181,7 @@ P.S. `/var/lib/postgresql/data` например такой результат
 ---
 
 ## Поднять значение итератора в sequence
-
+#up #sequence #iterator
 ```sql
 SELECT setval('my_sequence', currval('my_sequence') + 1000);
 ```

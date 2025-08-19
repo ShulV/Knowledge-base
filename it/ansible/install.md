@@ -64,3 +64,30 @@ Collecting ansible==9.13.0
 (env_ansible) shulpov.v@fedora:~$ ansible --version
 ansible [core 2.16.14]
 ```
+
+---
+
+### Установка специфической версии ansible-core
+#core
+```bash
+pipx install ansible-core==2.12.3
+
+python -m pip install --user ansible-core==2.12.3
+```
+
+### Установка полного пакета ansible
+#dependency #dependencies #ansible #deps
+```bash
+pipx install --include-deps ansible
+```
+
+### Установлен ли pip для предпочитаемого python
+#pip #python
+```bash
+shulpov.v@fedora:~$ python -m pip -V
+pip 24.2 from /usr/lib/python3.13/site-packages/pip (python 3.13)
+```
+
+### Установка на специфичные ОС
+https://docs.ansible.com/ansible/latest/installation_guide/installation_distros.html
+
