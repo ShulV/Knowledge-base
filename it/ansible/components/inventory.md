@@ -64,25 +64,3 @@ shulpov.v@fedora:~/IdeaProjects/ansible-probe/ansible_quickstart$ ansible myhost
 }
 
 ```
-
----
-Создали плейбук в корне (playbook.yaml):
-```yaml
-- name: My first play  
-  hosts: myhosts  
-  tasks:  
-    - name: Ping my hosts  
-      ansible.builtin.ping:  
-  
-    - name: Print message  
-      ansible.builtin.debug:  
-        msg: Hello world
-```
-
-Запуск плейбука:
-```bash
-shulpov.v@fedora:~/IdeaProjects/ansible-probe/ansible_quickstart$ ansible-playbook -i inventory.yaml playbook.yaml
-```
-
-P.S. OK=3 указывает на то, что каждая задача выполнена успешно.
-
