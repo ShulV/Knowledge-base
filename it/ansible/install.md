@@ -91,3 +91,27 @@ pip 24.2 from /usr/lib/python3.13/site-packages/pip (python 3.13)
 ### Установка на специфичные ОС
 https://docs.ansible.com/ansible/latest/installation_guide/installation_distros.html
 
+
+## Установка специфической версии python и venv с ним
+#python #env #venv #virtual
+```bash
+python3.12 --version
+```
+
+создаем  виртуальную среду в домашней директории (все ее настройки будут хранится тут):
+```bash
+python3.12 -m venv ~/.ansible_2_16_venv
+```
+`.ansible_2_16_venv` - название директории
+
+переходим в виртуальную среду:
+```bash
+source ~/.ansible_2_16_venv/bin/activate
+```
+
+переходим и чекаем версию питона (пример):
+```bash
+shulpov.v@fedora:~$ source ~/.ansible_2_16_venv/bin/activate
+((.ansible_2_16_venv) ) shulpov.v@fedora:~$ python --version
+Python 3.12.11
+```
