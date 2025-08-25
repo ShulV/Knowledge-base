@@ -65,22 +65,6 @@ P.S. через `WHERE IN (...)` получается не очень, т.к. т
 > Удобно использовать для фильтров.
 
 ---
-
-## Посмотреть количество коннектов на сервере
-#connect #sql #stat #activity #datname #application #pool #connection
-
-по коннектам к базам данных на сервере
-```sql
-SELECT count(*), datname FROM pg_stat_activity group by datname;
-```
-
-по коннектам приложений к базам
-```sql
-select application_name, COUNT(*) as count from pg_stat_activity group by application_name
-```
-
-
----
 ## serial значения отстали
 #setval #nextval #currval #sequence #max
 ```sql
