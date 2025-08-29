@@ -46,7 +46,7 @@ https://spring.io/blog/2023/06/07/securing-spring-boot-applications-with-ssl
 
 ---
 ## Настройка ssl/tls через конфиг spring boot
-
+#spring #boot #tls #ssl #cert #trust
 ```yml
 server: 
 . ssl: 
