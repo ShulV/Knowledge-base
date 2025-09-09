@@ -229,4 +229,16 @@ P.S.
 Команда подтверждает разрешение DNS имени домена в правильный IP-адрес
 
 ---
+## Проверка занят ли порт
+#lsof #port #access #занят #http #ipv4 #tcp #listen
+```bash
+sudo lsof -i :1444
+```
+если свободен ничего не выведется, если занят, будет что-то вроде:
+```bash
+COMMAND   PID      USER   FD   TYPE  DEVICE SIZE/OFF NODE NAME
+ssh     54821 shulpov.v    4u  IPv4 2559151      0t0  TCP localhost:marcam-lm (LISTEN)
+```
+
+---
 

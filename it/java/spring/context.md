@@ -47,7 +47,6 @@ Consider marking one of the beans as @Primary, updating the consumer to accept m
 @Primary создает очень много проблем при неправильном использовании!!!**
 
 ---
-
 ## Интересные способы внедрения переменных из конфига
 #spring-beans #value #annotation #spel
 через SpEL:
@@ -61,4 +60,28 @@ Consider marking one of the beans as @Primary, updating the consumer to accept m
 ```
 
 ---
+## Быстро протестировать метод в сервисе
+#postConstruct #context #spring #spring-beans  #post #constuct #pre #event #ready
+Дождется, пока внедрятся бины в текущий сервис и создатся сам сервис
+```java
+@PostConstruct
+void onConstructed() {  
+    log.info("Some bean was created and dependent beans were autowired"); 
+}
+```
 
+Дождется, пока загрузится весь контекст приложения
+```java
+@EventListener(ApplicationReadyEvent.class)  
+void onApplicationReady() {  
+    log.info("Context was loaded");  
+}
+```
+
+Практического примера, кроме как остановка приложения, не пришло в голову. Можно сделать так:
+```java
+@PreDestroy  
+public void onDestroyed() {  
+    log.info("Application stopped");  
+}
+```
