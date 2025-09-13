@@ -57,7 +57,17 @@ sudo firewall-cmd --zone=public --add-service=https --permanent
 [sudo] password for victor: 
 success
 ```
-
+## Добавить порты в службу фаервола
+#port #firewall 
+Для того чтобы открыть порты 80 и 443, выполните следующие команды:
+###### Порт 80 (HTTP):
+```python
+sudo firewall-cmd --zone=public --add-port=80/tcp --permanent
+```
+###### Порт 443 (HTTPS):
+```python
+sudo firewall-cmd --zone=public --add-port=443/tcp --permanent
+```
 ## Перезагрузить конфиг фаервола
 #reload #restart #firewall
 ```bash
