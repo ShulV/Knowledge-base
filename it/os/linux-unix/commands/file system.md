@@ -116,3 +116,15 @@ find /path/ -type f -name '*.lock'
 ```bash
 sudo find ~/IdeaProjects/ -type f -name '*.lock' -delete
 ```
+
+---
+## Удалить строки, в которых есть подстрока из файла
+#remove #delete #replace #clear #grep #string #substring #log 
+```bash
+grep -v 'Do with message has not errors' main.2025-08-26.log > main.2025-08-26_pretty.log
+```
+P.S. удалить все строки, в которых есть `Do with message has not errors` 
+(Были излишние логи, которые затрудняли чтение файла логов)
+
+---
+

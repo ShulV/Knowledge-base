@@ -83,3 +83,64 @@ The Java EE `@Transactional` defines just 3 attributes:
 - `dontRollbackOn`: the list of Java `Exception` classes that can be triggered without triggering a transaction rollback
 - `rollbackOn`: the list of Java `Exception` classes that trigger a transaction rollback when being thrown
 - `value`: the propagation strategy, given by the [`TxType`](https://docs.oracle.com/javaee/7/api/javax/transaction/Transactional.TxType.html) Enum. For instance, if the transaction context can be inherited (e.g., `REQUIRED`) or a new transaction context should be created (e.g., `REQUIRES_NEW`) or if an exception should be thrown if no transaction context is present (e.g., `MANDATORY`) or if an exception should be thrown if a current transaction context is found (e.g., `NOT_SUPPORTED`).
+
+
+---
+
+## rollbackFor
+#rollback #rollbackFor #transactional 
+```java
+@Transactional(noRollbackFor = {ServiceException.class})
+```
+P.S. значение ServiceException.class будет соответствовать только выброшенным исключениям типа ServiceException и его подклассам.
+
+- Исключения, указанные в параметре `rollbackFor` или `noRollbackFor` во внешнем методе, определяют поведение отката всей транзакции.
+- Исключения, перечисленные во внутренних методах, действуют только локально и не отменяют и не заменяют правила внешнего метода.
+## Статус транзакции в runtime
+#runtime #status #state #transactional #trans
+
+```java
+TransactionAspectSupport.currentTransactionStatus();
+```
+можно пометить транзакцию к откату:
+```java
+TransactionAspectSupport.currentTransactionStatus().setRollbackOnly()
+```
+
+
+---
+## TransactionDefinition
+#TransactionDefinition #transactional #definition
+документация:
+> Настройки уровня изоляции и тайм-аута не будут применены, если не будет начата новая транзакция
+
+---
+
+## Работа перевода исключений в Spring (Repository)
+#translation #exception #repository #interceptor 
+Фреймворк Spring предоставляет специальное средство перехвата исключений — **PersistenceExceptionTranslationInterceptor**. Этот аспект выполняется автоматически, если репозиторий или DAO-класс аннотирован специальным образом (обычно аннотацией `@Repository`).
+
+Работа осуществляется примерно так:
+1. Ваш код производит какую-нибудь операцию с базой данных (например, сохранение или выборка данных).
+2. Если эта операция порождает какое-либо низкоуровневное исключение (например, нарушение целостности данных в JDBC или OOM-ошибку в Hibernate), фреймворк перехватывает это исключение.
+3. Затем фреймворк переводит это низкое исключение в стандартизированное Spring-исключение (например, `DataIntegrityViolationException`, `BadSqlGrammarException` и т.п.).
+4. Уже переведенное исключение распространяется дальше вверх по стэку вызовов.
+##### Зачем нужен `throws`-список в сигнатуре метода?
+Если ваш метод объявляет, что может выбрасывать определённые конкретные исключения (указывая их в секции `throws`), фреймворк перестанет переводить их автоматически. То есть, если ваше исключение явно объявлено в сигнатуры метода, оно останется в своём оригинальном виде и не будет подвергнуто переводу.
+##### Простой пример:
+Представим метод, работающий с базой данных:
+```java
+@Repository
+public class UserDao {
+    @Transactional
+    public void saveUser(User user) throws SQLException {
+        jdbcTemplate.update("INSERT INTO USERS (...) VALUES (...)", ...);
+    }
+}
+```
+Если в этом методе случится ошибка, связанная с нарушением уникальности первичного ключа (например, дубликат записи), будет выброшено исключение типа `SQLException`. Поскольку метод объявлен с типом исключения `SQLException`, фреймворк **не станет переводить** это исключение в стандартное Spring-исключение (например, `DuplicateKeyException`).
+
+Но если убрать `throws SQLException`, фреймворк автоматически перехватит и переведёт исключение, выдав вам высокоуровневую версию (например, `DataIntegrityViolationException`).
+
+---
+
