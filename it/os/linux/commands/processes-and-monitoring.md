@@ -26,7 +26,6 @@ killall java -9
 ```
 
 ----
-
 ## Дропнуть процесс на определенном порту
 #port #kill #lsof #list #xargs
 ```bash

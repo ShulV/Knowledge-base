@@ -1,7 +1,5 @@
-
----
 ## Получить свой публичный ключ
-#public #key
+#public #key #ssh
 ```bash
 # дефолт
 cat ~/.ssh/id_rsa.pub
@@ -86,7 +84,6 @@ server.ru - адрес SSH сервера
 P.S.
 
 ---
-
 ## Proxy jump
 #tunnel #jump #proxy 
 
@@ -100,63 +97,6 @@ ssh -J <jump server1>,<jump server2>,<jump server3> <remote server>
 ```
 
 ---
-
-## Запуск http-сервера
-#http #httpd
-
-```bash
-python3 -m http.server --directory /var/www/html/ 8091
-```
-
-Команда  запускает простой HTTP-сервер, который служит файлами из текущей рабочей директории на порту 8091. Давайте разберем её подробнее:
-
-1. **`python3`** – вызывает интерпретатор Python версии 3.x.
-2. **`-m`** – флаг, указывающий, что модуль будет запущен как скрипт.
-3. **`http.server`** – стандартный модуль Python, который предоставляет реализацию простого HTTP-сервера.
-4. **`8091`** – номер порта, на котором будет работать сервер
-
-P.S. является легким инструментом для временного обслуживания статичного контента (HTML-файлов, изображений, CSS и JavaScript).
-Можно обращаться к файлам в указанном директории, например, из браузера.
-
-НЕ ПОДДЕРЖИВАЕТСЯ OPTIONS - метод (были проблемы с загрузкой частями)
-
-----
-Лучше установить apache http-сервер, он более функциональный:
-```bash
-sudo npm install -g http-server
-```
-Запуск:
-```bash
-http-server -p 8091 -d /var/www/html
-```
-Что выводится при запуске:
-```bash
-Starting up http-server, serving ./
-
-http-server version: 14.1.1
-
-http-server settings: 
-CORS: disabled
-Cache: 3600 seconds
-Connection Timeout: 120 seconds
-Directory Listings: not visible
-AutoIndex: visible
-Serve GZIP Files: false
-Serve Brotli Files: false
-Default File Extension: none
-
-Available on:
-  http://127.0.0.1:8091
-  http://192.168.30.15:8091
-  http://10.8.0.30:8091
-Hit CTRL-C to stop the server
-
-...логи логи логи
-
-```
-
-----
-
 ## Настройка ssh-config
 #ssh #config 
 ```bash
@@ -195,50 +135,17 @@ Host project2
 # project 2
 ssh project2
 ```
-
 ---
-
-## Проверки доступности и работоспособности сервиса на другом хосте
-#ping #network 
+## Настройка таймаута ssh-сессии
+#timeout #session #closed #time #interval #ping  #ssh
 ```bash
-shulpov.v@fedora:$ ping pg.company.team
-PING pg.company.team (192.168.11.11) 56(84) bytes of data.64 bytes from pg.company.team (192.168.11.11): icmp_seq=1 ttl=64 time=0.645 ms64 bytes from pg.company.team (192.168.11.11): icmp_seq=2 ttl=64 time=0.677 ms64 bytes from pg.company.team (192.168.11.11): icmp_seq=3 ttl=64 time=0.536 ms
-```
-P.S.
-проверяет доступность хоста путем отправки ICMP-запросов. Результаты показывают, что узел доступен и откликается быстро (менее миллисекунд)
-#telnet #port #network
-
-```bash
-shulpov.v@fedora:~$ telnet pg.company.team 5432
-Trying 192.168.11.11...
-Connected to pg.soft-logic.team.
-Escape character is '^]'.
-```
-P.S. 
-попробовали установить прямое соединение с портом 5432 (стандартный порт PostgreSQL). Результат показал успешное установление соединения
-
-#nslookup #network 
-```bash
-shulpov.v@fedora:$ nslookup pg.company.team
-Server:        127.0.0.53
-Address:    127.0.0.53#53
-Name:   pg.company.team
-Address: 192.168.11.11
-```
-P.S. 
-Команда подтверждает разрешение DNS имени домена в правильный IP-адрес
-
----
-## Проверка занят ли порт
-#lsof #port #access #занят #http #ipv4 #tcp #listen
-```bash
-sudo lsof -i :1444
-```
-если свободен ничего не выведется, если занят, будет что-то вроде:
-```bash
-COMMAND   PID      USER   FD   TYPE  DEVICE SIZE/OFF NODE NAME
-ssh     54821 shulpov.v    4u  IPv4 2559151      0t0  TCP localhost:marcam-lm (LISTEN)
+/etc/ssh/sshd_config
 ```
 
----
+```
+ClientAliveInterval 60
+ClientAliveCountMax 5
+```
+ClientAliveInterval 60 — сервер каждые 60 секунд проверяет, жив ли клиент.
+ClientAliveCountMax 5 — если клиент не отвечает 5 раз, то рвёт соединение.
 

@@ -1,5 +1,3 @@
-wsimport
-
 ## подсчитать base64
 #basic #base64 #auth #authorization #header 
 ```bash
