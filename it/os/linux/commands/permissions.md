@@ -93,3 +93,8 @@ the root user, without needing the root password
 
 ---
 
+## Изменить основной группы пользователя
+#change #group #main 
+```bash
+usermod -g <имя_группы> <имя_пользователя>
+```
