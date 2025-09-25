@@ -127,4 +127,14 @@ P.S. удалить все строки, в которых есть `Do with mes
 (Были излишние логи, которые затрудняли чтение файла логов)
 
 ---
-
+## Архивировать файл .gz
+#zip #archieve #gzip #extract 
+архивировать
+```bash
+gzip ./file.sql
+```
+разархивировать
+```bash
+gzip -dc ./file.sql.gz
+gunzip -c ./file.sql.gz
+```

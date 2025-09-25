@@ -63,6 +63,33 @@ git bisect good
 git bisect reset
 ```
 
+Реальный пример:
+```bash
+git bisect start
+git bisect bad HEAD
+status: waiting for good commit(s), bad commit known
+git bisect good fd874ff7657fc9373176c39e57975a842f308e1a
+Бинарный поиск: 9 редакций осталось проверить после этой (примерно 3 шага)
+[c6f1c752dbc3ec445ac6cbc66bbe827478d8394b] SK-15464 - название коммита k...
+git bisect bad
+Бинарный поиск: 5 редакций осталось проверить после этой (примерно 2 шага)
+[24ead05be46a1ecc21c14fa500ce1c2a3ff6ece7] Merge branch 'feature/SK-15452' into 'develop'
+git bisect good
+Бинарный поиск: 2 редакции осталось проверить после этой (примерно 2 шага)
+[b04b2fb990bb724f7c36e2c2e7c111a98a040425] SK-15421 - название коммита n...
+git bisect good
+Бинарный поиск: 0 редакций осталось проверить после этой (примерно 1 шаг)
+[752bcf4cc35f0cf8191b628dc4ab1da15d3f0cdc] SK-15442 - название коммита m...
+git bisect good
+c6f1c752dbc3ec445ac6cbc66bbe827478d8394b is the first bad commit
+commit c6f1c752dbc3ec445ac6cbc66bbe827478d8394b
+Author: Victor Shulpov <shulpov.v@soft-logic.ru>
+Date:   Mon Sep 22 07:56:34 2025 +0000
+
+...- название коммита 
+изменные файлы и кол-во изменений...
+```
+
 ---
 ## git blame
 #blame
