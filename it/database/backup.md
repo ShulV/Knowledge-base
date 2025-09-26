@@ -1,5 +1,5 @@
 ## bash-скрипт для бэкапа и архивирования
-#bash #sh #backup #dump #pg_dump #gzip #daemon #sh
+#bash #sh #backup #dump #pg_dump #gzip #daemon #sh #store
 ```bash
 FIND=`which find`
 PG_DUMP=`which pg_dump`
@@ -30,5 +30,21 @@ chmod 440 $DB_BACKUP_DIR/*
 `-w` не выдавать запрос на ввод пароля. Если сервер требует аутентификацию по паролю и пароль не доступен с помощью других средств, таких как файл `.pgpass`, попытка соединения не удастся. Этот параметр может быть полезен в пакетных заданиях и скриптах, где нет пользователя, который вводит пароль.
 `| gzip` конвейер (pipe), позволяющий передать поток данных из предыдущего этапа (`pg_dump`) в утилиту `gzip`, сжимающую выходной файл.
 `> dump_name.sql.gz` выводит сжатый результат в файл
+
+---
+
+## Залить дамп с нуля
+#restore #dump #sql 
+```sql
+--создали пустую БД
+create database database_name;
+--добавили владельца
+alter database database_name owner to pg_user;
+--дали владельцу все права на БД
+grant all on database database_name to pg_user;
+psql -h 127.0.0.1 -p 5432 -U pg_user -d database_name < ./dump_file.sql
+```
+
+`dump_file.sql` - делался через `-F p` формат plain-text 
 
 ---
