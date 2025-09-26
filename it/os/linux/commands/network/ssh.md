@@ -138,6 +138,7 @@ ssh project2
 ---
 ## Настройка таймаута ssh-сессии
 #timeout #session #closed #time #interval #ping  #ssh #alive
+##### Общий конфиг
 ```bash
 /etc/ssh/sshd_config
 ```
@@ -149,12 +150,10 @@ ClientAliveCountMax 5
 ClientAliveInterval 60 — сервер каждые 60 секунд проверяет, жив ли клиент.
 ClientAliveCountMax 5 — если клиент не отвечает 5 раз, то рвёт соединение.
 
-для конкретного пользователя:
-`~/.ssh/config`
-
-```bash
+##### Настройка для конкретного пользователя
+в /home/victor/.ssh/config
+```
 Host *
-    TCPKeepAlive yes
-    ServerAliveInterval 60
-    ServerAliveCountMax 5
+    ServerAliveInterval 60
+    ServerAliveCountMax 5
 ```
