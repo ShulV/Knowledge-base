@@ -63,7 +63,7 @@ grep "operation_id = '1092222" log_file.txt
 ```
 ---
 ## Найти строки в файлах, где встречается подстрока
-#grep #search #recursive #substring #file
+#grep #search #recursive #substring #file #find
 
 ```bash
 grep -Ri 'linux' /home/user
