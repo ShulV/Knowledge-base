@@ -75,6 +75,10 @@ grep -Ri 'linux' /home/user
 - `-c`: Показывать количество совпадений.
 - `-v`: Показывать только непересекающиеся строки.
 
+в файлах с расширением `.log`
+```bash
+sudo grep -R '--include=*.log' 'some subtext' /srv/spotic-api
+```
 ---
 ## Найти самые крупные файлы
 #monitoring 
