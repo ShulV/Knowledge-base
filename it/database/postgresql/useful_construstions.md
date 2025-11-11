@@ -128,9 +128,18 @@ id BIGSERIAL
 ## Вставка N строк
 #loop #for #insert #random #postgres
 ```sql
-insert into t(a,b,c)  
-     select s.id, chr((32+random()*94)::integer), random() < 0.01  
-	   from generate_series(1,100000) as s(id)  
-   order by random();
+insert into probe.test(id, "name")  
+select s.id, (s.id::varchar)  
+from generate_series(1,1000000) as s(id)  
+order by random();
 ```
 
+---
+## Индекс на колонку на уникальность
+#unique #constraint #index #idx
+```sql
+create unique index if not exists  
+    client_workspace_role_code_idx on client_workspace_role (code);
+```
+
+---
