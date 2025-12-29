@@ -78,3 +78,41 @@ server:
 P.S. технически делают одно и то же, первый более новый вариант
 
 ---
+
+## Подключить https springboot
+#https #ssl #tls #cert #certificate #keytool #pkcs #key #keystore
+
+```bash
+keytool -genkeypair \
+  -alias test-cert-bvk \
+  -keyalg RSA \
+  -keysize 2048 \
+  -storetype PKCS12 \
+  -keystore keystore.p12 \
+  -validity 3650 \
+  -dname "CN=localhost, OU=keeper, O=sl, L=Local, S=Local, C=RU" \
+  -ext "SAN=dns:localhost,ip:127.0.0.1"
+
+```
+- `-alias springboot`: имя для сертификата.
+- `-keyalg RSA`: алгоритм ключа.
+- `-keysize 2048`: размер ключа.
+- `-storetype PKCS12`: формат хранилища.
+- `-keystore keystore.p12`: имя файла хранилища (будет создан файл `keystore.p12`).
+- `-validity 3650`: срок действия сертификата (10 лет).
+
+application.yml
+```yml
+server.port=8443
+server.ssl.key-store=classpath:keystore.p12
+server.ssl.key-store-password=your-keystore-password
+server.ssl.key-store-type=PKCS12
+server.ssl.key-alias=test-cert-bvk
+```
+
+вытащить серт, чтобы положить его в браузер:
+```bash
+openssl pkcs12 -in keystore.p12 -clcerts -nokeys -out pub_cert.crt
+```
+можно вытащить `pem`, экспортировав прям из браузера (кликнуть на замочек в адресной строке)
+

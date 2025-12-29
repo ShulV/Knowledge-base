@@ -143,4 +143,9 @@ public class UserDao {
 Но если убрать `throws SQLException`, фреймворк автоматически перехватит и переведёт исключение, выдав вам высокоуровневую версию (например, `DataIntegrityViolationException`).
 
 ---
-
+# переопределение поведения транзакции
+#override #transactional #modifying
+см. аннотацию
+```java
+@Modifying
+```
