@@ -114,10 +114,20 @@ P.S.
 физических ядер - 2, 
 сокетов (процессорных разъемов) - 1
 
+##### Количество ядер (отдельно)
+#thread #core #cpu #monitoring
+```bash
+nproc
+```
+
 ---
 
 ## Данные о перезапусках сервера
 #reboot #server
 ```bash
 last reboot
+```
+или
+```bash
+journalctl --list-boots
 ```
