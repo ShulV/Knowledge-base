@@ -88,3 +88,8 @@ openssl x509 -in ~/mts.pem -text -noout
 
 ---
 
+## Просмотреть информацию о сертификате
+#openssl #info #show #text #out #noout #x509 #jwt #cer #cert
+```
+openssl x509 -in ~/Загрузки/sandbox_alfa_test_jwt_2026.cer -text -noout
+```
