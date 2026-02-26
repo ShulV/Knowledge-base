@@ -9,7 +9,7 @@ P.S. можно начать делать всё локально, а привя
 
 ---
 ## Связка локального и удалённого репозитория
-#git #remote #origin #связь #связка
+#git #remote #origin #связь #связка #ssh #http #https #list
 ```bash
 # привязка
 git remote add origin https://github.com/username/repository.git
@@ -17,6 +17,11 @@ git remote add origin https://github.com/username/repository.git
 git remote -v
 # отправка коммитов в удаленный репо
 git push -u origin main
+```
+
+P.S. можно просто обновить урл, если нужно заменить https ссылку на ssh
+```
+git remote set-url origin git@github.com:ShulV/Knowledge-base.git
 ```
 
 ---
@@ -117,3 +122,12 @@ P.S. хэш у коммита создается новый, время прос
 
 ---
 
+## git branch -f
+#branch #git #force #move
+
+```
+git branch -f fome-branch some-commit-hash
+```
+- Git обновляет ref ветки `three` напрямую на коммит `C2`, игнорируя текущую историю.
+- Это полезно для сброса ветки к предыдущему состоянию, удаления "плохих" коммитов локально или воссоздания ветки.[](https://gitscripts.com/git-branch-f)​
+- Команда работает только с **локальными** ветками; для удалённых используйте `git push --force` (с осторожностью).
