@@ -50,3 +50,51 @@ Baeldung:
 
 ---
 
+# Пример использования  persistence.Tuple
+#tuple #persistence #object #ql #query #hql #hibernate
+
+P.S. красивее, чем мапить в Object.
+- для Tuple обязательно нужны alias'ы `c.id AS id, c.login AS login`
+- нужен query language. На нативном не получится.
+
+```java
+String employeeEmail = null;  
+Long employeeId = null;  
+try {  
+    Tuple result = entityManager.createQuery("""  
+        SELECT c.id AS id, c.login AS login  
+          FROM Client c  
+         WHERE c.id IN (SELECT CAST(osa.value AS long)  
+                          FROM OperationSystemAttribute osa  
+                         WHERE osa.operation = :operationId  
+                           AND osa.name = :empIdOperationSysAttrName)  
+    """, Tuple.class)  
+            .setParameter("operationId", instance.getId())  
+            .setParameter("empIdOperationSysAttrName", Attributes.SystemAttributes.Baas.Client.EMPL_ID)  
+            .setMaxResults(1)  
+            .getSingleResult();  
+    employeeId = ((Number) result.get("id")).longValue();  
+    employeeEmail = (String) result.get("login");  
+} catch (Exception ex) {  
+    log.error("Cannot send compliance email, cannot get employee email from operation system attributes: " +  
+                    "[person_id = '{}', operation_id = '{}']",  
+            securityBean.getPerson().getId(), instance.getId(), ex);  
+}
+```
+
+вариант с Object:
+```java
+Object[] result = (Object[]) entityManager.createNativeQuery("""  
+    SELECT id, login      
+      FROM client     
+     WHERE id IN (SELECT CAST(value AS BIGINT)                    
+			        FROM operation_system_attribute                  
+			       WHERE operation = :operationId                    
+			         AND name = :empIdOperationSysAttrName)     
+	 LIMIT 1""")  
+        .setParameter("operationId", instance.getId())  
+        .setParameter("empIdOperationSysAttrName", Attributes.SystemAttributes.Baas.Client.EMPL_ID)  
+        .getSingleResult();  
+employeeId = ((Number) result[0]).longValue();  
+employeeEmail = (String) result[1];
+```
