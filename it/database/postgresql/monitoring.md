@@ -23,5 +23,22 @@ SHOW max_connections;
 
 P.S. допустимое кол-во коннектов также настраивается на уровне приложения!
 
+мониторинг запросов, к-ые долго висят и занимают пул:
+```sql
+SELECT  
+    pid,  
+    datname,  
+    usename,  
+    client_addr,  
+    application_name,  
+    state,  
+    query,  
+    query_start,  
+    now() - query_start AS duration  
+FROM pg_stat_activity  
+ORDER BY application_name, duration DESC;
+```
+P.S. смотреть `state` - `idle`, `idle in transaction`
+
 ---
 

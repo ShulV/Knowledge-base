@@ -88,3 +88,15 @@ openssl x509 -in ~/mts.pem -text -noout
 
 ---
 
+## Просмотреть информацию о сертификате
+#openssl #info #show #text #out #noout #x509 #jwt #cer #cert
+```
+openssl x509 -in ~/Загрузки/sandbox_alfa_test_jwt_2026.cer -text -noout
+```
+
+# Генерация ключей для работы с JWT
+#openssl #jwt #cert #pem #private #public #sign #verify #rsa #generate #create
+```bash
+openssl genrsa -out private.pem 4096  
+openssl rsa -in private.pem -outform PEM -pubout -out public.pem
+```
