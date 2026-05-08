@@ -131,3 +131,11 @@ git branch -f fome-branch some-commit-hash
 - Git обновляет ref ветки `three` напрямую на коммит `C2`, игнорируя текущую историю.
 - Это полезно для сброса ветки к предыдущему состоянию, удаления "плохих" коммитов локально или воссоздания ветки.[](https://gitscripts.com/git-branch-f)​
 - Команда работает только с **локальными** ветками; для удалённых используйте `git push --force` (с осторожностью).
+
+---
+
+# Перевести все файлы в unstaged состояние
+#staged #unstaged #restore #reset #git #add #red
+```bash
+git restore --staged .
+```

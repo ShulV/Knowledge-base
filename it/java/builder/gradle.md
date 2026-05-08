@@ -51,3 +51,12 @@ P.S. Это нужно, например, докеру
 - **Контент**: `jar` упаковывает весь проект, включая зависимости, если настроено; `plainJar` же позволяет точно контролировать содержимое файла.
 - **Назначение**: `jar` чаще всего используется для развертывания приложений и библиотек, а `plainJar` — для специальных случаев вроде передачи ограниченного набора классов/ресурсов.
 ---
+
+
+## Получение укороченного hash коммита
+#gradle #hash #commit #revision #git
+```gradle
+ext.revisionProvider = providers.exec {  
+    commandLine "git", "rev-parse", "--short", "HEAD"  
+}.standardOutput.asText.map { it.trim() } as TransformBackedProvider
+```
