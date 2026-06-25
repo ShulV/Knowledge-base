@@ -68,12 +68,16 @@ P.S. через `WHERE IN (...)` получается не очень, т.к. т
 ## serial значения отстали
 #setval #nextval #currval #sequence #max
 ```sql
-select nextval('permission_section_id_seq');-- для инициализации перед вызовом setval. Значение все равно затрет setval, так что эта команда не влияет на значение
+select nextval('permission_section_id_seq');-- для инициализации перед вызовом curval. Значение все равно затрет setval, так что эта команда не влияет на значение
+
+```
+P.S. вроде перед текущим вариантом setval инициализировать не нужно.
+```sql
 select setval('permission_section_id_seq', (select max(id) from permission_section));
 ```
 
 P.S. был случай, когда вставляли значения в таблицу, используя в качестве значения id `max(id)`, таким образом sequence не поднимался, а потом падал, когда делали вставку с использованием встроенного `nextval
-
+curval падает, пока в сессии текущего подключения нет значения инкремента (оно хранится там, насколько я понял). Появляется оно в сессии после вызова, например, nextval.
 ```sql
 select currval('permission_section_id_seq');--тоже падал без инициализации
 ```

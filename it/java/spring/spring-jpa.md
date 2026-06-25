@@ -98,3 +98,27 @@ Object[] result = (Object[]) entityManager.createNativeQuery("""
 employeeId = ((Number) result[0]).longValue();  
 employeeEmail = (String) result[1];
 ```
+
+# Repository projection
+#repository #projection #graph #DTO #JPA #HQL #tuple
+Projection — это когда repository сразу возвращает не entity, а DTO-представление.
+
+Например через interface projection:
+
+```java
+public interface AuthorListItemProjection {    Long getId();    String getName();    String getCountryName();}
+```
+
+Repository:
+
+```java
+public interface AuthorRepository extends JpaRepository<Author, Long> {    @Query("""           select                a.id as id,               a.name as name,               c.name as countryName           from Author a           left join a.country c           where lower(a.name) like lower(concat('%', :query, '%'))           """)    List<AuthorListItemProjection> searchAuthors(@Param("query") String query);}
+```
+
+Spring Data JPA поддерживает projections: для interface-based projections он обычно строит `Tuple`-запросы и создает proxy под интерфейс.
+
+Потом в service можно превратить projection в DTO:
+
+```java
+@Transactional(readOnly = true)public List<AuthorDto> search(String query) {    return repository.searchAuthors(query).stream()            .map(p -> new AuthorDto(                    p.getId(),                    p.getName(),                    p.getCountryName(),                    0            ))            .toList();}
+```
