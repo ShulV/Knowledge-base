@@ -60,3 +60,18 @@ ext.revisionProvider = providers.exec {
     commandLine "git", "rev-parse", "--short", "HEAD"  
 }.standardOutput.asText.map { it.trim() } as TransformBackedProvider
 ```
+
+## Посмотреть зависимости конкретного модуля
+конкретная либа
+```bash
+./gradlew :spotic-api:dependencyInsight --dependency jackson --configuration runtimeClasspath
+./gradlew :keeper-api:dependencyInsight --dependency spring-security --configuration runtimeClasspath
+```
+- `implementation` что модуль объявляет как main-зависимости
+- `runtimeClasspath` что реально будет в classpath при запуске main-кода
+- `testRuntimeClasspath` что реально будет в classpath при запуске тестов
+```bash
+./gradlew :keeper-api:dependencies --configuration implementation
+./gradlew :keeper-api:dependencies --configuration testRuntimeClasspath
+./gradlew :samozanyatye:dependencies --configuration runtimeClasspath
+```
