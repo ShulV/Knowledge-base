@@ -42,6 +42,12 @@ jar {
 ```
 
 P.S. Это нужно, например, докеру
+// Так в манивесте будет версия, нужно для сборки:
+```gradle
+jar {
+        manifest.attributes Organization: "Soft-logic LLC", "Implementation-Version": globalVersion
+    }
+```
 
 ---
 ## jar VS plain jar
@@ -60,6 +66,8 @@ ext.revisionProvider = providers.exec {
     commandLine "git", "rev-parse", "--short", "HEAD"  
 }.standardOutput.asText.map { it.trim() } as TransformBackedProvider
 ```
+
+
 
 ## Посмотреть зависимости конкретного модуля
 конкретная либа
