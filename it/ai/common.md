@@ -21,3 +21,8 @@ irm https://xbox-dns.ru/softwares/agy/install.ps1 | iex
 
 curl -fsSL https://xbox-dns.ru/softwares/agy/install.sh | bash
 ```
+P.S. xbox-dns заблокировали в России!!!
+
+# репо скилов, 300к звезд
+#skill  #ai #agent 
+`https://github.com/mattpocock/skills/tree/main`
