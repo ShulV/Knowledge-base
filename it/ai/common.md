@@ -21,3 +21,7 @@ irm https://xbox-dns.ru/softwares/agy/install.ps1 | iex
 
 curl -fsSL https://xbox-dns.ru/softwares/agy/install.sh | bash
 ```
+
+# репо скилов, 300к звезд
+#skill  #ai #agent 
+`https://github.com/mattpocock/skills/tree/main`
